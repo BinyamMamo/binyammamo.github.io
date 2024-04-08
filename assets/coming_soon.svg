@@ -20,11 +20,11 @@
   }
 
   @keyframes colorChange {
-    0% { color: red; }
-    25% { color: blue; }
-    50% { color: green; }
-    75% { color: orange; }
-    100% { color: purple; }
+    0% { color: #c00; }
+    25% { color: #00c; }
+    50% { color: #080; }
+    75% { color: #cca500; }
+    100% { color: #500050; }
   }
       </style>
       <div class="container">
