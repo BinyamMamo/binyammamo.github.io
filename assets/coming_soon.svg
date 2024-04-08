@@ -1,0 +1,44 @@
+<svg fill="none" viewBox="0 0 600 300" width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="800" height="100%">
+    <div width="800" style="margin: 0; padding: 0" xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+        padding: 0;
+        
+          width: 700px;
+          height: 150px;
+
+          color: white;
+        }
+
+  .color-change {
+    animation: colorChange 3s infinite;
+  }
+
+  @keyframes colorChange {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: purple; }
+  }
+      </style>
+      <div class="container">
+<pre id="banner" class="color-change">
+
+ ██████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗ ██████╗         ███████╗ ██████╗  ██████╗ ███╗   ██╗
+██╔════╝██╔═══██╗████╗ ████║██║████╗  ██║██╔════╝         ██╔════╝██╔═══██╗██╔═══██╗████╗  ██║
+██║     ██║   ██║██╔████╔██║██║██╔██╗ ██║██║  ███╗        ███████╗██║   ██║██║   ██║██╔██╗ ██║
+██║     ██║   ██║██║╚██╔╝██║██║██║╚██╗██║██║   ██║        ╚════██║██║   ██║██║   ██║██║╚██╗██║
+╚██████╗╚██████╔╝██║ ╚═╝ ██║██║██║ ╚████║╚██████╔╝        ███████║╚██████╔╝╚██████╔╝██║ ╚████║
+ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝         ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝
+                                                                                              
+</pre>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
