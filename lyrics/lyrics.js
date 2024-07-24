@@ -449,6 +449,7 @@ function timer() {
           0
         ) / wpm_array.length;
       fillTextBox(`WPM: ${average}`);
+      location.href = "https://github.com/BinyamMamo";
     } else {
       let line = lyrics[curr].verse;
       // console.log(line);
