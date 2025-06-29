@@ -107,7 +107,8 @@
         }
 
         .chapter-item.completed {
-            background: linear-gradient(135deg, #2ed573 0%, #17c0eb 100%) !important;
+            /* background: linear-gradient(135deg, #2ed573 0%, #17c0eb 100%) !important; */
+            background-color: #2ed57388;
             border-color: #2ed573 !important;
             box-shadow: 0 4px 15px rgba(46, 213, 115, 0.4) !important;
         }
@@ -144,7 +145,7 @@
         }
 
         .progress-bar {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.15);
             border-radius: 10px;
             height: 4px;
             margin-top: 0.5rem;
@@ -321,15 +322,16 @@
 
         .option.correct {
             /* background: linear-gradient(135deg, #2ed573 0%, #17c0eb 100%); */
-            background-color: #2ed573;
-            border-color: #2ed573;
+            background-color: #1e9573;
+            border-color: #1e9573;
             color: white;
             box-shadow: 0 4px 15px rgba(46, 213, 115, 0.3);
         }
 
         .option.incorrect {
-            background: linear-gradient(135deg, #ff7675 0%, #fd79a8 100%);
-            border-color: #ff7675;
+            /* background-color: linear-gradient(135deg, #ff7675 0%, #fd79a8 100%); */
+            background-color: #ee4645;
+            border-color: #ee4645;
             color: white;
             box-shadow: 0 4px 15px rgba(255, 118, 117, 0.3);
         }
@@ -2205,13 +2207,12 @@
             container.innerHTML = '';
             
             // Add header with progress info
-            const header = document.createElement('div');
-            header.className = 'header';
-            header.innerHTML = `
-                <h1>Health Determinants Study Guide</h1>
-                <p>Interactive study guide with automatic progress saving. Your answers are saved locally and will persist between sessions.</p>
-            `;
-            container.appendChild(header);
+            // const header = document.createElement('div');
+            // header.className = 'header';
+            // header.innerHTML = `
+            //     <h1>Health & Society Revision Worksheet</h1>
+            // `;
+            // container.appendChild(header);
             
             chaptersData.forEach((chapter, index) => {
                 const chapterSection = document.createElement('div');
@@ -2225,14 +2226,14 @@
                 
                 chapterSection.innerHTML = `
                     <div class="chapter-header">
-                        <div class="chapter-number">Chapter ${chapter.id}${isCompleted ? ' ✅' : ''}</div>
+                        <div class="chapter-number">Chapter ${chapter.id}${isCompleted ? ' ' : ''}</div>
                         <h2 class="chapter-title-main">${chapter.title}</h2>
-                        <p class="chapter-description">${chapter.description}</p>
+                        <p class="chapter-description" style="margin-bottom: 1em;">${chapter.description}</p>
                         <div class="chapter-stats">
                             <div class="stat-badge">${chapter.questions.length} Questions</div>
                             <div class="stat-badge">${answered} Answered</div>
                             <div class="stat-badge">${accuracy}% Accuracy</div>
-                            ${isCompleted ? '<div class="stat-badge" style="background: linear-gradient(135deg, #2ed573 0%, #17c0eb 100%);">Complete</div>' : ''}
+                            ${isCompleted ? '<div class="stat-badge" style="background-color: #56e787;">Complete</div>' : ''}
                         </div>
                     </div>
                     
@@ -2431,7 +2432,7 @@
                     const progressText = chapterItem.querySelector('.chapter-progress');
                     
                     if (progressBar) progressBar.style.width = `${progress}%`;
-                    if (progressText) progressText.textContent = `${answered}/${total} completed${isCompleted ? ' ✅' : ''}`;
+                    if (progressText) progressText.textContent = `${answered}/${total} completed${isCompleted ? ' ' : ''}`;
                 }
             });
         }
