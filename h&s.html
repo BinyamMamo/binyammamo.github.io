@@ -664,274 +664,1385 @@
 
         // Embedded chapters data
         const studyData = {
-            "chapters": [
-                {
-                    "id": 1,
-                    "title": "Self, Family, and Community / Public Health & Societal Factors",
-                    "description": "Understanding how individual, social, and environmental factors interact to influence health outcomes.",
-                    "questions": [
-                        {
-                            "id": 1,
-                            "question": "According to the socioecological model, which of the following best explains why a highly educated individual might still engage in unhealthy behaviors?",
-                            "options": [
-                                "Education always ensures healthy behavior",
-                                "Environmental and social influences can override individual knowledge",
-                                "Genetics completely determines behavior",
-                                "Employment status has no influence on behavior"
-                            ],
-                            "correct": 1,
-                            "explanation": "The socioecological model identifies complex levels and interrelationships that influence health. Even highly educated individuals may struggle with healthy behaviors due to environmental factors (lack of green space, unsafe neighborhoods) and social influences (peer pressure, community norms) that can override individual knowledge."
-                        },
-                        {
-                            "id": 2,
-                            "question": "Which health model suggests that a person's perception of disease severity influences their behavior change?",
-                            "options": [
-                                "Socioecological Model",
-                                "Health Belief Model",
-                                "Transtheoretical Model",
-                                "Behaviorism Theory"
-                            ],
-                            "correct": 1,
-                            "explanation": "The Health Belief Model explains how health behaviors are influenced by four key perceptions: perceived susceptibility, perceived seriousness of consequences (disease severity), perceived benefits of action, and perceived barriers."
-                        },
-                        {
-                            "id": 3,
-                            "question": "A woman avoids public parks due to safety concerns in her neighborhood, reducing her physical activity. Which determinant is most at play?",
-                            "options": [
-                                "Genetic",
-                                "Individual knowledge",
-                                "Environmental",
-                                "Cultural"
-                            ],
-                            "correct": 2,
-                            "explanation": "This reflects environmental determinants - specifically the built environment. Safety concerns in public parks represent a geographical barrier that prevents physical activity, even when individuals understand the benefits of exercise."
-                        },
-                        {
-                            "id": 4,
-                            "question": "Despite knowing the dangers, a teenager smokes to fit in with friends. This scenario best reflects the influence of:",
-                            "options": [
-                                "Media",
-                                "Peers",
-                                "Religion",
-                                "Genetics"
-                            ],
-                            "correct": 1,
-                            "explanation": "This demonstrates the powerful impact of peer influence on health behaviors. Even when individuals know the risks, social pressure from peers can override individual knowledge, as the desire to fit in becomes a stronger motivator."
-                        },
-                        {
-                            "id": 6,
-                            "question": "In the Stages of Change Model, which stage does someone say, 'Maybe I should think about quitting smoking'?",
-                            "options": [
-                                "Precontemplation",
-                                "Contemplation",
-                                "Preparation",
-                                "Maintenance"
-                            ],
-                            "correct": 1,
-                            "explanation": "The Contemplation stage is characterized by individuals considering making a change, often thinking 'Well... maybe'. This involves acknowledging the possibility of change without yet committing to specific steps."
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "title": "Genetics",
-                    "description": "Exploring heredity, genetic disorders, and how genes interact with environmental factors.",
-                    "questions": [
-                        {
-                            "id": 5,
-                            "question": "Which of the following is an example of epigenetics?",
-                            "options": [
-                                "A person inheriting blue eyes",
-                                "Air pollution triggering gene changes passed to offspring",
-                                "A dominant gene for height",
-                                "A family history of heart disease"
-                            ],
-                            "correct": 1,
-                            "explanation": "Epigenetics refers to chemical modifications that alter DNA without changing the sequence. Environmental factors like air pollution can cause epigenetic changes that are passed to offspring."
-                        },
-                        {
-                            "id": 21,
-                            "question": "A woman with type A blood (genotype AO) claims a man with type AB blood fathered her child, who has type B blood. Which statement is correct?",
-                            "options": [
-                                "This is genetically impossible",
-                                "The child must be adopted",
-                                "The claim is possible only if the mother is AO",
-                                "The mother must have genotype AA"
-                            ],
-                            "correct": 2,
-                            "explanation": "For a child with type B blood (genotype BO), the mother (AO) can pass O and the father (AB) can pass B. This is only possible if the mother is heterozygous (AO)."
-                        },
-                        {
-                            "id": 22,
-                            "question": "Two parents with the genotype Bb (black fur is dominant) produce offspring. Which probability is correct?",
-                            "options": [
-                                "All offspring will have black fur",
-                                "25% chance for white fur offspring",
-                                "75% of offspring will be white",
-                                "All offspring will be heterozygous"
-                            ],
-                            "correct": 1,
-                            "explanation": "Using a Punnett square for Bb × Bb: 25% BB (black), 50% Bb (black), 25% bb (white). Only bb genotype (25%) will have white fur."
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "title": "Mental Health and Stress",
-                    "description": "Understanding stress responses, mental health disorders, and coping mechanisms.",
-                    "questions": [
-                        {
-                            "id": 56,
-                            "question": "Which best distinguishes eustress from distress?",
-                            "options": [
-                                "Eustress is always harmful, while distress is always beneficial",
-                                "Eustress is positive stress that promotes growth, while distress is negative and overwhelming",
-                                "Both are equally harmful over time",
-                                "Eustress occurs only in physical situations, distress in emotional ones"
-                            ],
-                            "correct": 1,
-                            "explanation": "Eustress is positive stress that can be motivating and promote growth (e.g., excitement about college). Distress is negative stress that can be overwhelming and contribute to health problems."
-                        },
-                        {
-                            "id": 57,
-                            "question": "Which characteristic would best help an individual cope with a stressful life event by viewing it as a challenge rather than a threat?",
-                            "options": [
-                                "Pessimism",
-                                "Hardiness",
-                                "Type D personality",
-                                "Low resilience"
-                            ],
-                            "correct": 1,
-                            "explanation": "Hardiness is an effective coping style characterized by viewing stressors as challenges rather than threats. Hardy individuals see stressful situations as manageable challenges."
-                        }
-                    ]
-                },
-                {
-                    "id": 4,
-                    "title": "Body Weight and Body Composition",
-                    "description": "Examining BMI, body fat distribution, and their health implications.",
-                    "questions": [
-                        {
-                            "id": 30,
-                            "question": "A man's BMI is calculated as 31.2 kg/m². According to international guidelines, he would be classified as:",
-                            "options": [
-                                "Normal weight",
-                                "Overweight",
-                                "Obese",
-                                "Morbidly obese"
-                            ],
-                            "correct": 2,
-                            "explanation": "BMI classifications: Underweight (<18.5), Normal (18.5-24.9), Overweight (25-29.9), Obese (≥30). A BMI of 31.2 falls in the obese category."
-                        },
-                        {
-                            "id": 31,
-                            "question": "A male patient has a waist circumference of 106 cm. What can be inferred about his disease risk?",
-                            "options": [
-                                "Normal risk",
-                                "Increased risk due to visceral fat",
-                                "No risk if BMI is normal",
-                                "Risk only if cholesterol is also elevated"
-                            ],
-                            "correct": 1,
-                            "explanation": "Large abdominal circumference indicates increased visceral fat, which is metabolically active and represents independent disease risk even if BMI is normal."
-                        }
-                    ]
-                },
-                {
-                    "id": 5,
-                    "title": "Cancer",
-                    "description": "Understanding cancer biology, prevention, detection, and treatment approaches.",
-                    "questions": [
-                        {
-                            "id": 47,
-                            "question": "Which best explains why stem cells, while vital for tissue repair, pose a higher risk for cancer?",
-                            "options": [
-                                "They divide slowly and predictably",
-                                "They are shielded from mutations",
-                                "They can divide indefinitely and may accumulate mutations",
-                                "They lack any DNA repair mechanisms"
-                            ],
-                            "correct": 2,
-                            "explanation": "Stem cells can divide indefinitely, and each division carries mutation risk. Their prolonged division capacity increases the chance of accumulating the critical mutations required for cancer."
-                        },
-                        {
-                            "id": 48,
-                            "question": "A tumor that grows slowly and does not invade nearby tissues is classified as:",
-                            "options": [
-                                "Malignant",
-                                "Benign",
-                                "Metastatic",
-                                "Invasive"
-                            ],
-                            "correct": 1,
-                            "explanation": "Benign tumors are characterized by slow growth and being unlikely to spread to surrounding tissues, unlike malignant tumors which can invade and metastasize."
-                        }
-                    ]
-                },
-                {
-                    "id": 6,
-                    "title": "Epidemiology / Public Health Approach",
-                    "description": "Learning about disease patterns, causation, and public health investigation methods.",
-                    "questions": [
-                        {
-                            "id": 35,
-                            "question": "An outbreak of salmonella occurs at a restaurant in Dubai. The investigation reveals contaminated lettuce as the source. Which epidemiological factor does the lettuce represent?",
-                            "options": [
-                                "Host",
-                                "Agent",
-                                "Environment",
-                                "Determinant"
-                            ],
-                            "correct": 2,
-                            "explanation": "In the epidemiological triangle: Agent (Salmonella bacteria), Host (people who got sick), Environment (contaminated lettuce as the vehicle of transmission)."
-                        },
-                        {
-                            "id": 37,
-                            "question": "A new virus spreads rapidly across several continents. This would be best classified as:",
-                            "options": [
-                                "Endemic",
-                                "Cluster",
-                                "Epidemic",
-                                "Pandemic"
-                            ],
-                            "correct": 3,
-                            "explanation": "A pandemic is a disease that spreads across regions or continents. A virus spreading rapidly across several continents fits this definition."
-                        }
-                    ]
-                },
-                {
-                    "id": 7,
-                    "title": "Nutrition and Sports Supplements",
-                    "description": "Examining nutritional needs, supplement safety, and performance-enhancing substances.",
-                    "questions": [
-                        {
-                            "id": 67,
-                            "question": "Which best explains why dietary supplements are not always reliable despite being sold legally?",
-                            "options": [
-                                "They are pre-approved for safety before sale",
-                                "They are completely regulated like prescription drugs",
-                                "The FDA monitors them only after they enter the market and only if issues arise",
-                                "They must pass extensive human trials before being sold"
-                            ],
-                            "correct": 2,
-                            "explanation": "Dietary supplements are not effectively regulated unless problems arise. The FDA's role begins largely after products enter the marketplace, unlike prescription drugs."
-                        },
-                        {
-                            "id": 68,
-                            "question": "Why might a female endurance athlete who avoids dairy products be at higher risk for stress fractures?",
-                            "options": [
-                                "Low calcium intake can weaken bones and increase fracture risk",
-                                "Avoiding dairy reduces hydration levels",
-                                "Dairy avoidance always causes muscle cramps",
-                                "Dairy contains protein that prevents fractures"
-                            ],
-                            "correct": 0,
-                            "explanation": "Calcium deficiency increases stress fracture risk. Dairy products are a primary calcium source essential for bone health and preventing fractures."
-                        }
-                    ]
-                }
-            ]
-        };
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Self, Family, and Community / Public Health & Societal Factors",
+      "description": "Understanding how individual, social, and environmental factors interact to influence health outcomes, including genetics, health literacy, and behavior change models.",
+      "questions": [
+        {
+          "id": 1,
+          "question": "According to the socioecological model, which of the following best explains why a highly educated individual might still engage in unhealthy behaviors?",
+          "options": [
+            "Education always ensures healthy behavior",
+            "Environmental and social influences can override individual knowledge",
+            "Genetics completely determines behavior",
+            "Employment status has no influence on behavior"
+          ],
+          "correct": 1,
+          "explanation": "The **sociological model of health** identifies the complex levels and interrelationships that influence your health. It highlights that 'your unique set of characteristics' and 'your social and physical environments' both shape health. Factors like **friends, family, community norms, economic, social, and public policy, and even global events** affect health opportunities. Therefore, even with individual knowledge (like education), powerful environmental and social influences can create barriers to healthy behaviors."
+        },
+        {
+          "id": 2,
+          "question": "Which health model suggests that a person's perception of disease severity influences their behavior change?",
+          "options": [
+            "Socioecological Model",
+            "Health Belief Model",
+            "Transtheoretical Model",
+            "Behaviorism Theory"
+          ],
+          "correct": 1,
+          "explanation": "The **Health Belief Model** posits that health behaviors are influenced by four perceptions, one of which is the **'Perceived seriousness of consequences'**. This means that an individual's belief about how severe a disease or its consequences might be can motivate or deter them from taking action."
+        },
+        {
+          "id": 3,
+          "question": "A woman avoids public parks due to safety concerns in her neighborhood, reducing her physical activity. Which determinant is most at play?",
+          "options": [
+            "Genetic",
+            "Individual knowledge",
+            "Environmental",
+            "Cultural"
+          ],
+          "correct": 2,
+          "explanation": "**Environmental factors** that influence health can be divided into built and natural factors. The **built environment**, including safe neighborhoods, is crucial as it encourages and increases physical activity throughout the lifespan. Safety concerns within her neighborhood directly represent an environmental determinant impacting her health choices."
+        },
+        {
+          "id": 4,
+          "question": "Despite knowing the dangers, a teenager smokes to fit in with friends. This scenario best reflects the influence of:",
+          "options": [
+            "Media",
+            "Peers",
+            "Religion",
+            "Genetics"
+          ],
+          "correct": 1,
+          "explanation": "The **sociological model of health** explicitly identifies **'friends'** and 'family' as factors that influence your health opportunities. This scenario demonstrates how social pressure from a peer group can override individual knowledge about health risks."
+        },
+        {
+          "id": 5,
+          "question": "Which of the following is an example of epigenetics?",
+          "options": [
+            "A person inheriting blue eyes",
+            "Air pollution triggering gene changes passed to offspring",
+            "A dominant gene for height",
+            "A family history of heart disease"
+          ],
+          "correct": 1,
+          "explanation": "**Epigenetics** refers to chemical modifications that alter DNA without changing the nucleotide sequence, and these changes can activate or repress gene expression. The environment interacts with DNA in this way to create changes that can be passed along from generation to generation. Air pollution, an environmental factor, causing such inheritable gene changes is a direct example of epigenetics."
+        },
+        {
+          "id": 6,
+          "question": "In the Stages of Change Model, which stage does someone say, “Maybe I should think about quitting smoking”?",
+          "options": [
+            "Precontemplation",
+            "Contemplation",
+            "Preparation",
+            "Maintenance"
+          ],
+          "correct": 1,
+          "explanation": "The **Stages of Change Model** (also known as the Transtheoretical Model, TTM) outlines several phases of behavior change. The **'Contemplation'** stage is characterized by a person thinking, **'Well . . . maybe'**. This indicates an awareness of the problem and a consideration of change, but not yet a commitment to act."
+        },
+        {
+          "id": 7,
+          "question": "A health professional helps a client set specific, measurable steps toward losing weight. This reflects which behavior change plan element?",
+          "options": [
+            "Self-efficacy",
+            "Relapse prevention",
+            "Goal setting",
+            "Knowledge transfer"
+          ],
+          "correct": 2,
+          "explanation": "Creating a behavior change plan involves several steps, including **'Set goals'** and **'Develop action plan with SMART (Specific, Measurable, Attainable, Realistic, Time-bound) goals'**. Helping a client set specific, measurable steps directly falls under the element of goal setting."
+        },
+        {
+          "id": 8,
+          "question": "A patient with diabetes cannot attend frequent check-ups due to living 3 hours from the nearest specialist. This best reflects:",
+          "options": [
+            "Sociocultural factor",
+            "Socioeconomic factor",
+            "Environmental determinant",
+            "Individual skill factor"
+          ],
+          "correct": 2,
+          "explanation": "**Environmental factors** are identified as influences on health. Geographic barriers, such as living a considerable distance from healthcare services or specialists, are a form of **environmental determinant** that can create significant challenges for accessing necessary care, despite individual desire or knowledge."
+        },
+        {
+          "id": 9,
+          "question": "Which statement about health disparities is FALSE?",
+          "options": [
+            "They always result from genetics",
+            "They can be caused by systemic policies",
+            "Rural residents may face more health barriers",
+            "Race and ethnicity influence disparities"
+          ],
+          "correct": 0,
+          "explanation": "**Health disparities** are defined as resulting from **'systemic and avoidable social and economic practices and policies that create barriers for some groups'**. They are observed between rural and urban U.S. regions and are influenced by ethnicity and race. Therefore, the statement that they *always* result from genetics is false, as social, economic, and environmental factors are explicitly identified as key causes."
+        },
+        {
+          "id": 10,
+          "question": "Which scenario BEST shows the interaction of socioeconomic and environmental factors?",
+          "options": [
+            "A wealthy family living near a polluted industrial area",
+            "A marathon runner born with asthma",
+            "A vegetarian choosing to eat meat during holidays",
+            "A student choosing to skip PE class"
+          ],
+          "correct": 0,
+          "explanation": "**Social determinants of health** influence the options and choices individuals have, and **environmental factors** influence health. While a wealthy family (socioeconomic factor) has resources, their residence near a polluted industrial area (environmental factor like chemical carcinogens) demonstrates an interaction where the environment poses a risk despite socioeconomic advantages. This highlights that socioeconomic status can influence exposure to environmental carcinogens."
+        },
+        {
+          "id": 11,
+          "question": "During a pandemic, why might lower-income individuals experience higher infection rates?",
+          "options": [
+            "Genetics make them more susceptible",
+            "They often cannot work remotely or afford to isolate",
+            "They lack awareness of the disease",
+            "Vaccines are ineffective for lower-income groups"
+          ],
+          "correct": 1,
+          "explanation": "The COVID-19 pandemic demonstrated how **socioeconomic status** significantly impacts health outcomes. People with lower incomes had **'less ability to physically distance, work from home, or take leave'**, making them more vulnerable to exposure and higher infection rates due to their work and living conditions."
+        },
+        {
+          "id": 12,
+          "question": "A patient refuses a blood transfusion due to religious beliefs. This is an example of what determinant?",
+          "options": [
+            "Socioeconomic",
+            "Sociocultural",
+            "Environmental",
+            "Genetic"
+          ],
+          "correct": 1,
+          "explanation": "The sources describe **ethnicity** as drawn from common ancestry and origins, including **religious** and cultural aspects. **Community norms** and broader social environments are identified as influences on health. Religious beliefs fall under **sociocultural factors**, which shape individual choices and opportunities regarding health."
+        },
+        {
+          "id": 13,
+          "question": "Which factor most strongly predicts health outcomes according to the Teague PPT?",
+          "options": [
+            "Age",
+            "Socioeconomic status",
+            "Gender",
+            "Race"
+          ],
+          "correct": 1,
+          "explanation": "The sources explicitly state that **'Socioeconomic status has perhaps the most significant impact on health outcomes'**. This factor encompasses income, education, and occupation, deeply influencing health opportunities and choices."
+        },
+        {
+          "id": 14,
+          "question": "A city builds more bike lanes and pedestrian paths. Which public health principle is being applied?",
+          "options": [
+            "Health promotion",
+            "Genetic screening",
+            "Disease treatment",
+            "Individual behavior focus only"
+          ],
+          "correct": 0,
+          "explanation": "**Health promotion** is defined as 'actions designed to maintain a current health state or encourage a more desirable state of health'. Supporting active lifestyles through community planning, such as building bike lanes and pedestrian paths, directly encourages increased physical activity and a more desirable state of health. This is a clear application of health promotion at the community level."
+        },
+        {
+          "id": 15,
+          "question": "Which of these individuals has the highest health literacy?",
+          "options": [
+            "A person who reads about diseases but struggles to apply information",
+            "Someone who uses and evaluates health information for decisions",
+            "A doctor who ignores new research findings",
+            "A fitness coach who memorizes nutrition facts"
+          ],
+          "correct": 1,
+          "explanation": "**Health literacy** is defined as **'the ability to read, understand and act on health information'**. An individual who can both evaluate and use health information effectively for their decisions fully embodies this definition, going beyond mere memorization or passive reading."
+        },
+        {
+          "id": 16,
+          "question": "A person with high perseverance and self-belief quits smoking despite social pressure. Which individual factor contributed most?",
+          "options": [
+            "Knowledge",
+            "Attitude",
+            "Skill",
+            "Genetics"
+          ],
+          "correct": 1,
+          "explanation": "The Stages of Change Model emphasizes **'Self-efficacy, an internal state in which you feel competent to perform a specific task, is a significant factor'** in behavior change. Perseverance and strong self-belief are indicative of a positive **attitude** and high self-efficacy, enabling an individual to overcome challenges like social pressure."
+        },
+        {
+          "id": 17,
+          "question": "Which combination of factors might multiply health risks most significantly?",
+          "options": [
+            "High income + poor education",
+            "Low income + low education + poor environment",
+            "Good education + poor family support",
+            "High income + unhealthy diet"
+          ],
+          "correct": 1,
+          "explanation": "**Socioeconomic status** has the most significant impact on health outcomes, and **worse health status is strongly associated with poverty**. The sociological model of health indicates that **economic, social, and public policy** affect health opportunities, along with **social and physical environments**. A combination of low income, low education (which limits options and choices), and a poor environment (e.g., exposure to carcinogens, lack of green space) creates multiple compounding barriers and risks, leading to significantly multiplied health risks."
+        },
+        {
+          "id": 18,
+          "question": "Why might the media increase risk behaviors even without explicit peer pressure?",
+          "options": [
+            "Media replaces personal choice",
+            "Media can normalize risky behaviors through frequent, subtle portrayals",
+            "Viewers only copy what they are directly told",
+            "Media is rarely influential in modern health behavior"
+          ],
+          "correct": 1,
+          "explanation": "The **sociological model of health** includes **'community norms'** as influencing health opportunities. Media, through frequent and subtle portrayals, can contribute to shaping and normalizing these community norms by presenting certain risky behaviors as common, acceptable, or desirable, thereby influencing choices without direct peer pressure."
+        },
+        {
+          "id": 19,
+          "question": "An immigrant family struggles to find culturally appropriate health services. This barrier is most directly related to:",
+          "options": [
+            "Employment status",
+            "Sociocultural factors",
+            "Individual genetics",
+            "Technological limitations"
+          ],
+          "correct": 1,
+          "explanation": "**Ethnicity** is defined as drawn from common ancestry and origins, including **cultural** aspects. The ability to interact effectively with others and the social environment constitutes **social health**. Difficulties in finding culturally appropriate health services stem from a mismatch between the cultural background of the family and the available services, clearly indicating a **sociocultural barrier**."
+        },
+        {
+          "id": 20,
+          "question": "A man adopts a Mediterranean diet after learning about its heart benefits and because his peers support healthy eating. This change reflects which combined determinants?",
+          "options": [
+            "Individual, sociocultural, and environmental",
+            "Genetic only",
+            "Environmental only",
+            "Individual and genetic only"
+          ],
+          "correct": 0,
+          "explanation": "This scenario demonstrates an interplay of several health determinants. The man's learning about heart benefits reflects **individual knowledge/characteristics**. His peers supporting healthy eating represent **social influences** (friends/family/community norms). His ability to adopt a Mediterranean diet implies access to relevant food choices, an **environmental factor** related to obesogenic environments and lifestyle. Therefore, it reflects individual, sociocultural, and environmental factors."
+        },
+        {
+          "id": 21,
+          "question": "A woman with type A blood (genotype AO) claims a man with type AB blood fathered her child, who has type B blood. Which statement is correct?",
+          "options": [
+            "This is genetically impossible.",
+            "The child must be adopted.",
+            "The claim is possible only if the mother is AO.",
+            "The mother must have genotype AA."
+          ],
+          "correct": 2,
+          "explanation": "Blood type inheritance follows Mendelian genetics. For a child to have Type B blood (genotype BO), they must inherit an O allele from one parent and a B allele from the other. If the mother is genotype AO and the father is AB, the mother can pass on an O allele and the father can pass on a B allele. Therefore, a BO child is possible. **This specific blood type inheritance pattern is based on external genetic knowledge not fully detailed in the provided sources, which primarily cover general concepts of dominant and recessive alleles and sex chromosomes.**"
+        },
+        {
+          "id": 22,
+          "question": "Two parents with the genotype Bb (black fur is dominant) produce offspring. Which probability is correct?",
+          "options": [
+            "All offspring will have black fur.",
+            "25% chance for white fur offspring.",
+            "75% of offspring will be white.",
+            "All offspring will be heterozygous."
+          ],
+          "correct": 1,
+          "explanation": "If both parents are heterozygous (Bb) and black fur (B) is dominant over white fur (b), a Punnett square cross (Bb x Bb) yields genotypes: BB, Bb, Bb, and bb. Since 'b' is a recessive allele, it requires two copies for the white fur phenotype to appear. Thus, the 'bb' genotype results in white fur, which represents 1 out of 4 possible outcomes, or a **25% chance for white fur offspring**. **This specific genetic cross calculation is based on external knowledge of Punnett squares, building on the source's explanation of dominant and recessive alleles.**"
+        },
+        {
+          "id": 23,
+          "question": "Which best explains why two tall pea plants might produce short offspring?",
+          "options": [
+            "Tall plants can only pass on dominant alleles.",
+            "Both parents must be homozygous tall.",
+            "Both parents carried a recessive allele for shortness.",
+            "Shortness is a spontaneous mutation."
+          ],
+          "correct": 2,
+          "explanation": "The sources explain that **'Alternate forms of genes called alleles are responsible for traits'** and that **'Alleles can be dominant or recessive'**. A recessive allele (like shortness) requires two copies to be expressed. Therefore, for two tall parents to produce short offspring, both must carry a recessive allele for shortness (i.e., both are heterozygous for the tall trait), allowing a combination of two recessive alleles in the offspring."
+        },
+        {
+          "id": 24,
+          "question": "In incomplete dominance, crossing two pink carnations (CR CW x CR CW) results in what phenotypic ratio?",
+          "options": [
+            "1 red : 2 pink : 1 white",
+            "3 pink : 1 white",
+            "All pink",
+            "2 red : 2 white"
+          ],
+          "correct": 0,
+          "explanation": "In **incomplete dominance**, the heterozygous phenotype is an intermediate blend of the two homozygous phenotypes (e.g., CRCR = red, CWCW = white, CRCW = pink). When two pink (CRCW) carnations are crossed, the offspring will have the following phenotypic ratio: 1 CRCR (red) : 2 CRCW (pink) : 1 CWCW (white). **This explanation relies on external knowledge of incomplete dominance, as the provided sources only discuss simple dominant and recessive inheritance.**"
+        },
+        {
+          "id": 25,
+          "question": "Which scenario best illustrates codominance?",
+          "options": [
+            "A pink flower resulting from a red x white cross.",
+            "A flower with both red and white patches.",
+            "Green peas resulting from two yellow parents.",
+            "A tall plant crossed with a short plant producing medium height offspring."
+          ],
+          "correct": 1,
+          "explanation": "**Codominance** is a genetic phenomenon where both alleles for a gene are fully and separately expressed in the heterozygous individual. A flower with both red and white patches (e.g., like a roan animal that shows both red and white hairs) is a classic example, as both colors are distinctly visible. **This explanation relies on external knowledge of codominance, as the provided sources primarily discuss simple dominant and recessive inheritance.**"
+        },
+        {
+          "id": 26,
+          "question": "Two rabbits are crossed. One is heterozygous white (Bb), and the other is homozygous black (BB). Which is true?",
+          "options": [
+            "50% of the offspring will be black.",
+            "All offspring will appear black.",
+            "25% will be white.",
+            "It depends on environmental factors only."
+          ],
+          "correct": 1,
+          "explanation": "Assuming black fur (B) is dominant and white fur (b) is recessive, a cross between a heterozygous white (Bb) rabbit and a homozygous black (BB) rabbit (Bb x BB) would yield offspring with genotypes BB and Bb. Since 'B' (black) is dominant, all offspring will express the black phenotype. **This specific genetic cross calculation is based on external knowledge of Punnett squares, building on the source's explanation of dominant and recessive alleles.**"
+        },
+        {
+          "id": 27,
+          "question": "In humans, a colorblind woman (XbXb) and a man with normal vision (XBY) have children. What percentage of their sons will be colorblind?",
+          "options": [
+            "0%",
+            "50%",
+            "100%",
+            "25%"
+          ],
+          "correct": 2,
+          "explanation": "Color blindness is an X-linked recessive trait. A colorblind woman has two recessive alleles (XbXb). A man with normal vision has one dominant allele and a Y chromosome (XBY). Sons inherit their X chromosome from their mother and their Y chromosome from their father. Since the mother is XbXb, she can only pass an Xb allele to her sons. Therefore, all sons will have the genotype XbY, meaning **100% of their sons will be colorblind**. **This explanation relies on external knowledge of X-linked inheritance, building on the source's mention of sex chromosomes and dominant/recessive alleles.**"
+        },
+        {
+          "id": 28,
+          "question": "Which cross would never produce a child with blood type O?",
+          "options": [
+            "AO x BO",
+            "AB x AB",
+            "AO x OO",
+            "BO x OO"
+          ],
+          "correct": 1,
+          "explanation": "Blood type O has the genotype OO. For a child to have blood type O, they must inherit an O allele from *each* parent. In the cross AB x AB, neither parent carries the O allele, so it is impossible for them to pass it on to their offspring. Therefore, this cross would never produce a child with blood type O. **This explanation relies on external knowledge of blood type inheritance, as the provided sources do not detail specific inheritance patterns for blood types.**"
+        },
+        {
+          "id": 29,
+          "question": "Why might phenotype ratios in actual offspring sometimes differ from expected Punnett square predictions?",
+          "options": [
+            "The laws of probability are always exact.",
+            "Mutations and small sample sizes can cause variations.",
+            "Genotypes change during the life of an organism.",
+            "Dominant traits can randomly become recessive."
+          ],
+          "correct": 1,
+          "explanation": "Punnett squares provide **probabilities** of genetic outcomes, not guarantees for every individual instance, especially with **small sample sizes**. Additionally, a **mutation** is defined as a change in a gene, which can alter expected phenotypes. The sources also note that 'the precise roles of each [environment and genetics] are not always clear', suggesting other influencing factors. These factors can lead to variations from theoretical predictions."
+        },
+        {
+          "id": 32,
+          "question": "Two parents are heterozygous for a recessive disorder (Aa × Aa). What is the probability their child will inherit the disorder?",
+          "options": [
+            "0%",
+            "25%",
+            "50%",
+            "75%"
+          ],
+          "correct": 1,
+          "explanation": "If a disorder is recessive, an individual must inherit two copies of the recessive allele (e.g., 'aa') to express the disorder. When two heterozygous parents (Aa × Aa) cross, a Punnett square predicts the following genotypes: AA, Aa, Aa, and aa. This means there is a **25% probability** (1 in 4) that their child will inherit two recessive alleles ('aa') and thus the disorder. **This specific genetic cross calculation is based on external knowledge of Punnett squares, building on the source's explanation of dominant and recessive alleles.**"
+        },
+        {
+          "id": 33,
+          "question": "If a child inherits heterozygous (Yy) alleles for seed color, and yellow is dominant, what percentage of offspring from two heterozygous parents (Yy × Yy) will express the dominant phenotype?",
+          "options": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+          ],
+          "correct": 2,
+          "explanation": "If yellow (Y) is dominant and green (y) is recessive, a heterozygous individual has the genotype Yy. When two heterozygous parents (Yy x Yy) are crossed, the possible genotypes are YY, Yy, Yy, and yy. Individuals with YY or Yy genotypes will express the dominant yellow phenotype. This accounts for 3 out of 4 possibilities, resulting in a **75% chance** of expressing the dominant phenotype. **This specific genetic cross calculation is based on external knowledge of Punnett squares, building on the source's explanation of dominant and recessive alleles.**"
+        },
+        {
+          "id": 34,
+          "question": "A heterozygous tall plant (Tt) is crossed with a short plant (tt). What is the probability their offspring will be tall?",
+          "options": [
+            "0%",
+            "25%",
+            "50%",
+            "75%"
+          ],
+          "correct": 2,
+          "explanation": "If tall (T) is dominant and short (t) is recessive, a heterozygous tall plant is Tt and a short plant is tt. When crossed (Tt x tt), the possible offspring genotypes are Tt and tt. Since Tt results in a tall phenotype (due to the dominant allele), there is a **50% probability** that the offspring will be tall. **This specific genetic cross calculation is based on external knowledge of Punnett squares, building on the source's explanation of dominant and recessive alleles.**"
+        },
+        {
+          "id": 90,
+          "question": "Which level of prevention is most cost-effective for reducing chronic disease incidence?",
+          "options": [
+            "Tertiary prevention",
+            "Secondary prevention",
+            "Primary prevention",
+            "Quaternary prevention"
+          ],
+          "correct": 2,
+          "explanation": "Public health encompasses **'health promotion'** and **'disease prevention'**. **Primary prevention** involves actions designed to prevent diseases from occurring in the first place, such as 'health education campaigns promoting physical activity'. Logically, preventing a disease from developing is typically more cost-effective than treating it once it has appeared or managing its complications, making primary prevention the most cost-effective approach for reducing chronic disease incidence."
+        },
+        {
+          "id": 91,
+          "question": "Why is secondary prevention considered essential even if primary prevention efforts are strong?",
+          "options": [
+            "It eliminates the need for medical treatment.",
+            "It identifies individuals at risk before symptoms develop, allowing early interventions.",
+            "It is more effective than primary or tertiary prevention combined.",
+            "It replaces the need for healthy behaviors."
+          ],
+          "correct": 1,
+          "explanation": "The source explains that **'Screening tests'** are 'given to a large group of people to identify a smaller group who are at higher risk for a specific disease or condition,' and they are **'Key to early detection of cancer'**. This process defines secondary prevention: it aims to identify diseases or risks early, even before symptoms are apparent, enabling timely interventions to prevent progression or mitigate severity, thus complementing primary prevention."
+        },
+        {
+          "id": 92,
+          "question": "Which health determinant is most directly influenced by public policy and infrastructure development in the UAE?",
+          "options": [
+            "Genetics",
+            "Physical environment (clean water, air quality, safe roads)",
+            "Personal coping skills",
+            "Family history of disease"
+          ],
+          "correct": 1,
+          "explanation": "**Public policy** directly impacts health opportunities and can support active lifestyles through **community planning**. **Environmental factors**, including built environments, influence health. Therefore, public policy and infrastructure development can directly influence elements of the **physical environment** like clean water, air quality, and safe roads, making them key determinants of health."
+        },
+        {
+          "id": 93,
+          "question": "What distinguishes tertiary prevention from primary and secondary prevention?",
+          "options": [
+            "It occurs before any disease has developed.",
+            "It targets healthy individuals exclusively.",
+            "It focuses on reducing complications and improving quality of life after disease diagnosis.",
+            "It eliminates the need for medications."
+          ],
+          "correct": 2,
+          "explanation": "While **disease prevention** generally involves actions to 'ward off specific diseases and their consequences', tertiary prevention specifically focuses on individuals who have already been diagnosed with a disease. Its goal is to **'reduce complications and improving quality of life after disease diagnosis'**, differentiating it from primary prevention (preventing disease onset) and secondary prevention (early detection)."
+        },
+        {
+          "id": 94,
+          "question": "Which determinant of health most directly explains why people with strong family and community support often experience better health outcomes?",
+          "options": [
+            "Genetics",
+            "Social support networks",
+            "Physical environment",
+            "Employment status"
+          ],
+          "correct": 1,
+          "explanation": "The **sociological model of health** identifies **'friends, family, [and] community norms'** as factors that affect health opportunities. **Social health** is defined as 'the ability to interact effectively with others and the social environment'. Furthermore, developing a **support system** is recognized as a key **stress reduction strategy**, and strong social support 'reduces stress, encourages healthy behaviors, and can prevent illness before medical care is needed'. This strongly points to social support networks as the determinant."
+        },
+        {
+          "id": 95,
+          "question": "In the UAE’s health improvement strategies, what is the main purpose of aligning policies with the UN’s 2030 Agenda?",
+          "options": [
+            "To reduce healthcare costs exclusively.",
+            "To align national health goals with international standards promoting equity, sustainability, and improved well-being.",
+            "To eliminate all diseases by 2025.",
+            "To provide universal genetic testing."
+          ],
+          "correct": 1,
+          "explanation": "The sources state that by improving education, income opportunities, environmental sustainability, and healthcare access, the UAE can 'further reduce health disparities and enhance population well-being.' These efforts 'support the UAE’s ongoing Vision strategies for advanced healthcare and **align with the UN’s 2030 Agenda for Good Health and Well-Being**'. The primary purpose is therefore to align national goals with broader international standards for health equity and sustainable well-being."
+        },
+        {
+          "id": 96,
+          "question": "What differentiates how education influences health compared to income?",
+          "options": [
+            "Education affects only young individuals.",
+            "Education enhances health literacy, problem-solving, and access to better employment opportunities, leading to improved health behaviors.",
+            "Income is unrelated to education.",
+            "Education prevents genetic diseases."
+          ],
+          "correct": 1,
+          "explanation": "**Health literacy** is defined as 'the ability to read, understand and act on health information', which is directly fostered by education. Education also plays a role in **socioeconomic status**, which has a significant impact on health outcomes by influencing access to better employment opportunities. The explanation confirms that education 'enhances health literacy, problem-solving, and access to better employment opportunities, leading to improved health behaviors'."
+        },
+        {
+          "id": 97,
+          "question": "Why is it important to focus on gender as a determinant of health in the UAE?",
+          "options": [
+            "Men and women experience identical health risks.",
+            "Gender determines the types of diseases and health challenges individuals face at different ages, requiring tailored public health strategies.",
+            "Gender only affects reproductive health.",
+            "Public health policies ignore gender differences."
+          ],
+          "correct": 1,
+          "explanation": "The sociological model of health acknowledges that 'your unique set of characteristics' influence health. While not explicitly stated about gender as a primary determinant, **health disparities** are noted based on ethnicity and race, and gender-specific patterns in body fat distribution are discussed. The revision worksheet states directly that 'Gender determines the types of diseases and health challenges individuals face at different ages, requiring tailored public health strategies', highlighting the need for gender-specific approaches in public health."
+        },
+        {
+          "id": 99,
+          "question": "Two parents, both carriers of cystic fibrosis (heterozygous), are planning for a child. Which is the correct probability of their child having the disease?",
+          "options": [
+            "0%",
+            "25%",
+            "50%",
+            "75%"
+          ],
+          "correct": 1,
+          "explanation": "This scenario is identical to question 32. If a disease is recessive, both parents must contribute a recessive allele for the child to inherit the disorder. When two heterozygous carriers (Aa × Aa) mate, there is a **25% probability** that their child will inherit two recessive alleles ('aa') and thus the disease. **This specific genetic cross calculation is based on external knowledge of Punnett squares, building on the source's explanation of dominant and recessive alleles.**"
+        },
+        {
+          "id": 102,
+          "question": "Which best explains why tertiary prevention is critical even when primary and secondary prevention efforts are strong?",
+          "options": [
+            "It prevents all disease",
+            "It reverses or limits disease complications in individuals already diagnosed",
+            "It eliminates the need for primary care",
+            "It only focuses on vaccination"
+          ],
+          "correct": 1,
+          "explanation": "Tertiary prevention is essential because it **'reverses or limits disease complications in individuals already diagnosed'**. Even with robust primary (disease prevention) and secondary (early detection) efforts, some individuals will still develop chronic or acute conditions. Tertiary prevention aims to manage these existing diseases, reduce their impact, prevent further deterioration, and improve the quality of life for affected individuals, making it a critical component of a comprehensive public health system."
+        },
+        {
+          "id": 103,
+          "question": "A patient refuses cancer treatment, believing chemotherapy harms the immune system. Which aspect of health behavior change models might this reflect?",
+          "options": [
+            "Low perceived severity",
+            "High perceived barriers",
+            "High self-efficacy",
+            "Transtheoretical 'maintenance' stage"
+          ],
+          "correct": 1,
+          "explanation": "According to the **Health Belief Model**, health behaviors are influenced by 'Perceived barriers to taking action'. Chemotherapy is known to kill rapidly dividing normal cells, including white blood cells which are part of the immune system. A patient's belief that chemotherapy would harm their immune system would therefore act as a significant **perceived barrier** to undergoing the treatment, even if they understand its potential benefits."
+        },
+        {
+          "id": 104,
+          "question": "In the UAE, public health policy focuses heavily on primary prevention for non-communicable diseases. Which is an example?",
+          "options": [
+            "Diabetes screening for at-risk adults",
+            "Heart disease rehabilitation",
+            "Health education campaigns promoting physical activity",
+            "Dialysis treatment for kidney failure"
+          ],
+          "correct": 2,
+          "explanation": "**Primary prevention** aims to prevent disease onset. **Health promotion** is defined as 'actions designed to maintain a current health state or encourage a more desirable state of health'. Health education campaigns that promote physical activity align with health promotion and are a direct example of primary prevention for non-communicable diseases. In contrast, screening (A) is secondary prevention, and rehabilitation (B) and dialysis (D) are tertiary prevention."
+        },
+        {
+          "id": 109,
+          "question": "Which factor best explains why health disparities persist even in countries with advanced healthcare like the UAE?",
+          "options": [
+            "Universal access guarantees equal outcomes",
+            "Genetics are the only driver",
+            "Social determinants like income, education, and employment continue to influence health beyond healthcare availability",
+            "Climate alone drives disparities"
+          ],
+          "correct": 2,
+          "explanation": "The sources emphasize that **'many social determinants of health influence the options you have and the choices you make'**, and that **'Socioeconomic status has perhaps the most significant impact on health outcomes'**. These social determinants, including income, education, and employment, create barriers and influence health opportunities. Therefore, even with advanced healthcare systems, underlying social and economic inequalities can perpetuate **health disparities**, as these factors extend beyond mere access to medical services."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Mental Health and Stress",
+      "description": "Exploring concepts of mental well-being, common mental disorders, stress responses, and coping mechanisms.",
+      "questions": [
+        {
+          "id": 55,
+          "question": "Which best distinguishes eustress from distress?",
+          "options": [
+            "Eustress is always harmful, while distress is always beneficial.",
+            "Eustress is positive stress that promotes growth, while distress is negative and overwhelming.",
+            "Both are equally harmful over time.",
+            "Eustress occurs only in physical situations, distress in emotional ones."
+          ],
+          "correct": 1,
+          "explanation": "The sources define **eustress** as occurring 'When you appraise an event as positive,' leading to **'positive stress'**. Conversely, **distress** occurs 'When you appraise it as negative'. Eustress is associated with growth and motivation, while distress is typically negative and overwhelming."
+        },
+        {
+          "id": 56,
+          "question": "Which characteristic would best help an individual cope with a stressful life event by viewing it as a challenge rather than a threat?",
+          "options": [
+            "Pessimism",
+            "Hardiness",
+            "Type D personality",
+            "Low resilience"
+          ],
+          "correct": 1,
+          "explanation": "**Hardiness** is described as 'an effective style of coping with stress,' characterized by a tendency to view events as challenges rather than threats. **Resilience** also enables stress-resistant people to 'focus on immediate issues and explain their struggles in positive and helpful ways'. Both traits facilitate a positive cognitive appraisal of stressors, aiding in effective coping."
+        },
+        {
+          "id": 57,
+          "question": "Which best differentiates acute stress from chronic stress?",
+          "options": [
+            "Acute stress has long-term harmful effects; chronic stress never affects health.",
+            "Acute stress is short-term and often manageable, while chronic stress persists over time and can harm physical and mental health.",
+            "Acute stress only affects the cardiovascular system, while chronic stress affects the immune system.",
+            "Chronic stress leads to eustress."
+          ],
+          "correct": 1,
+          "explanation": "The body is 'equipped to deal with short-term **acute stress** if it does not happen too often and if you can relax and recover afterward'. In contrast, **chronic stress** is a 'stress response continuing without resolution,' and 'Prolonged or severe stress weakens nearly every system in the body,' increasing the likelihood of illness."
+        },
+        {
+          "id": 58,
+          "question": "Why are individuals with higher emotional intelligence better at managing stress?",
+          "options": [
+            "They avoid all stressful situations.",
+            "They suppress emotions to prevent physiological changes.",
+            "They recognize, manage, and respond to their emotions and the emotions of others effectively.",
+            "They rely solely on rational thinking, avoiding emotional responses."
+          ],
+          "correct": 2,
+          "explanation": "Individuals who are **emotionally intelligent** possess key abilities, including the capacity to 'Recognize, name, and understand their emotions,' 'Manage their emotions and control their moods,' and 'Recognize and respond to emotions in others'. These skills enable them to navigate stressful situations more effectively by understanding and regulating their own internal states and social interactions, leading to better stress management."
+        },
+        {
+          "id": 59,
+          "question": "Which stage of the General Adaptation Syndrome (GAS) involves the body using energy to cope with continued stress without fully returning to homeostasis?",
+          "options": [
+            "Alarm",
+            "Resistance",
+            "Exhaustion",
+            "Recovery"
+          ],
+          "correct": 1,
+          "explanation": "Hans Selye's **General Adaptation Syndrome (GAS)** describes the physiological changes in the stress response. In the **'resistance stage'**, the body 'uses energy to cope with the continued stress but is unable to return to homeostasis'. This stage represents the body's attempt to adapt to the stressor, but at a cost of sustained physiological effort."
+        },
+        {
+          "id": 60,
+          "question": "Which neurotransmitter imbalance is most commonly associated with mood disorders such as depression?",
+          "options": [
+            "Dopamine",
+            "Acetylcholine",
+            "Serotonin",
+            "GABA"
+          ],
+          "correct": 2,
+          "explanation": "The sources explicitly link **'Low levels' of Serotonin** to **'depression, problems with anger control and concentration,'** and list it as involved in **'Mood disorders'**. This highlights serotonin as a critical neurotransmitter in the context of mood regulation."
+        },
+        {
+          "id": 61,
+          "question": "Which scenario best reflects resilience?",
+          "options": [
+            "An individual avoids all stressful situations to protect their mental health.",
+            "A student faces academic failure but develops a new study plan and seeks help, eventually improving their grades.",
+            "A person experiences a stressful event and withdraws socially for months.",
+            "A worker suppresses emotions and refuses to talk about stress at work."
+          ],
+          "correct": 1,
+          "explanation": "**Resilience** is defined as **'The ability to bounce back from an adverse event'**. It also allows stress-resistant people to 'focus on immediate issues and explain their struggles in positive and helpful ways'. A student overcoming academic failure by actively seeking solutions and improving exemplifies this ability to adapt and recover from adversity."
+        },
+        {
+          "id": 62,
+          "question": "Which best explains the primary difference between panic disorder and generalized anxiety disorder (GAD)?",
+          "options": [
+            "Panic disorder involves constant worrying, while GAD involves sudden, intense fear.",
+            "Panic disorder includes recurrent, unexpected panic attacks; GAD involves chronic, excessive worrying.",
+            "Both conditions always result from traumatic events.",
+            "GAD only occurs in social situations."
+          ],
+          "correct": 1,
+          "explanation": "The sources define **Panic disorder** as characterized by **'Recurrent unexpected panic attacks'**. In contrast, **Generalized anxiety disorder (GAD)** is characterized by **'Worry about routine matters'**, which often manifests as excessive and uncontrollable worrying. This distinction in the nature of anxiety — sudden, intense attacks versus chronic, pervasive worry — is key."
+        },
+        {
+          "id": 63,
+          "question": "Why might individuals with Type A personality patterns be at higher risk for stress-related illnesses?",
+          "options": [
+            "They typically avoid competition and challenges.",
+            "Their calm approach reduces stress hormone levels.",
+            "Their impulsive and highly competitive behaviors increase chronic stress responses.",
+            "They experience less distress than other personality types."
+          ],
+          "correct": 2,
+          "explanation": "Individuals with a **Type A behavior pattern** are described as 'Impulsive, achievement-oriented, and highly competitive'. Such traits can lead to a sustained activation of the stress response, resulting in **chronic stress**. Chronic stress, which continues without resolution, is known to 'increase the likelihood of illness' and weaken nearly every body system, thereby increasing the risk of stress-related illnesses."
+        },
+        {
+          "id": 64,
+          "question": "Which best distinguishes positive psychology from traditional approaches to mental health?",
+          "options": [
+            "Positive psychology focuses only on curing mental illnesses.",
+            "Positive psychology emphasizes building strengths, virtues, and happiness, rather than solely treating disorders.",
+            "Traditional psychology ignores the role of emotions.",
+            "Positive psychology avoids discussing emotional intelligence."
+          ],
+          "correct": 1,
+          "explanation": "In recent years, psychologists have become more interested in **positive psychology**, which focuses **'on the positive emotions, characteristics, strengths, and conditions that create happiness'**. This contrasts with a sole focus on preventing or treating mental illnesses, as positive psychology seeks to promote thriving and well-being beyond the absence of disorder."
+        },
+        {
+          "id": 106,
+          "question": "A mentally healthy person experiencing job loss develops temporary anxiety but uses emotional intelligence to cope. Which mental health trait is most at work?",
+          "options": [
+            "Denial",
+            "Catastrophizing",
+            "Resilience",
+            "Pessimism"
+          ],
+          "correct": 2,
+          "explanation": "**Resilience** is defined as the 'ability to bounce back from an adverse event'. The scenario describes a person who experiences a stressful event (job loss), feels temporary anxiety (a normal response), but then utilizes coping mechanisms (implied by using emotional intelligence, which allows one to 'manage their emotions and control their moods') to recover effectively. This demonstrates the characteristic of resilience."
+        },
+        {
+          "id": 108,
+          "question": "A woman exposed to violence experiences PTSD and gastrointestinal issues. This demonstrates which concept?",
+          "options": [
+            "Psychosomatic illness unrelated to trauma",
+            "The biopsychosocial model linking trauma to both mental and physical health outcomes",
+            "Purely physical effects of trauma",
+            "Gender-specific immunity"
+          ],
+          "correct": 1,
+          "explanation": "**Post-traumatic stress disorder (PTSD)** is identified as a long-term psychological illness that can result from stress. The sources also state that **'Stress plays a role in illness and disease'**, including in the **'gastrointestinal system'** where 'common stomach ailments can be related to stress'. This scenario illustrates the interconnectedness of mental (PTSD from violence/trauma) and physical (gastrointestinal issues) health, aligning with a **biopsychosocial model** where biological, psychological, and social factors interact to influence health and illness."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Epidemiology and Public Health",
+      "description": "The study of health patterns and determinants in populations, and its application to public health decision-making.",
+      "questions": [
+        {
+          "id": 35,
+          "question": "An outbreak of salmonella occurs at a restaurant in Dubai. The investigation reveals contaminated lettuce as the source. Which epidemiological factor does the lettuce represent?",
+          "options": [
+            "Host",
+            "Agent",
+            "Environment",
+            "Determinant"
+          ],
+          "correct": 2,
+          "explanation": "Epidemiology uses a model for studying infectious disease and its spread that involves the microbe that causes the disease (agent), the organism that harbors the disease (host), and **'the external factors that cause or allow disease transmission'** (environment). In this case, the contaminated lettuce acts as the external vehicle or medium, representing an **environmental factor** that allowed the transmission of Salmonella."
+        },
+        {
+          "id": 36,
+          "question": "A new virus spreads rapidly across several continents. This would be best classified as:",
+          "options": [
+            "Endemic",
+            "Cluster",
+            "Epidemic",
+            "Pandemic"
+          ],
+          "correct": 3,
+          "explanation": "A **'pandemic'** is explicitly defined as **'a disease or condition that spreads across regions'**. The rapid spread of a new virus across several continents perfectly fits this definition."
+        },
+        {
+          "id": 37,
+          "question": "Which of the following best explains why observational studies are commonly used in epidemiology rather than experimental studies?",
+          "options": [
+            "Experimental studies are faster.",
+            "Observational studies are more accurate.",
+            "It is often unethical to expose people to potential health risks.",
+            "Observational studies do not require statistical analysis."
+          ],
+          "correct": 2,
+          "explanation": "The sources state that 'the most straightforward approach is… to do experiments on real people! **BUT WITH A FEW EXCEPTIONS, this is highly unethical. You can’t go around exposing people to potentially harmful substances JUST TO SEE WHAT HAPPENS**'. This ethical constraint makes **observational studies**, where researchers 'observ[e] the real world' and measure existing exposures, the preferred method in many epidemiological investigations."
+        },
+        {
+          "id": 38,
+          "question": "A researcher finds a statistically significant relationship between ice cream sales and drowning incidents. What concept explains why this relationship might not indicate causation?",
+          "options": [
+            "Determinant",
+            "Confounding variable",
+            "Distribution bias",
+            "Reverse causality"
+          ],
+          "correct": 1,
+          "explanation": "The sources warn that 'Just because someone was exposed to something and they got sick, does not mean that the two events are related'. This is explained by **'Confounding'**, which refers to **'other factors that confuses our interpretation of the exposure'**. In this example, the true cause for both ice cream sales and drowning incidents to rise is likely the summer temperature, making temperature the confounding variable that creates a spurious correlation."
+        },
+        {
+          "id": 39,
+          "question": "In the definition of epidemiology, which of the following BEST differentiates \"distribution\" from \"determinants\"?",
+          "options": [
+            "Distribution identifies causes; determinants describe frequency.",
+            "Distribution covers who, when, and where; determinants explain why and how.",
+            "Distribution studies single individuals; determinants apply only to large groups.",
+            "Distribution and determinants are identical concepts."
+          ],
+          "correct": 1,
+          "explanation": "The definition of epidemiology includes the 'study of the **distribution** and **determinants** of health-related states'. The sources clarify that **'distribution' refers to: 'Who, When, Where'**, focusing on patterns of disease occurrence. Meanwhile, **'determinants' generally includes: 'Agents, Causes, Control measures, Risk factors, Sources'**, which explain the 'why and how' of health problems. This clearly differentiates their roles."
+        },
+        {
+          "id": 40,
+          "question": "An epidemiologist notices a sudden rise in lung cancer cases among non-smokers living near a factory. What should be the next step in investigating this potential public health issue?",
+          "options": [
+            "Close the factory immediately.",
+            "Perform an experimental study exposing people to factory emissions.",
+            "Conduct an observational study analyzing possible exposures and confounders.",
+            "Assume the cancer increase is random."
+          ],
+          "correct": 2,
+          "explanation": "Epidemiological investigations involve **'quite a bit of detective work to figure out what exposures really lead to the health outcomes'** and which only appear to. When facing a group of cases that 'might be more than expected' (a cluster), the appropriate scientific next step is to **'observ[e] the real world'** through **observational studies**, analyzing potential exposures (like factory emissions) and carefully considering and controlling for **confounding variables**."
+        },
+        {
+          "id": 41,
+          "question": "Which of the following scenarios represents a cluster rather than an epidemic or endemic condition?",
+          "options": [
+            "Measles cases spread throughout an entire country over 6 months.",
+            "15 employees at a single office develop food poisoning after a staff lunch.",
+            "Malaria consistently occurs in specific regions of Africa.",
+            "A flu outbreak covers several neighboring countries."
+          ],
+          "correct": 1,
+          "explanation": "A **'cluster'** is defined as a **'group of cases in a specific time and place that might be more than expected'**. The scenario of 15 employees developing food poisoning in a single office after a specific event (staff lunch) precisely fits this definition, as it is a localized increase in cases above what would normally be anticipated."
+        },
+        {
+          "id": 42,
+          "question": "Which combination of study methods would best help confirm a causal link between an exposure and disease?",
+          "options": [
+            "High p-value + case reports",
+            "Low p-value + small sample size",
+            "Low p-value + large effect size in multiple studies",
+            "Observational data only"
+          ],
+          "correct": 2,
+          "explanation": "While a **'low p-value'** indicates that 'the results studied represent reality and did not happen because of chance/random variations', the sources caution that 'p-value alone isn’t enough!'. Researchers also need to consider **'how large of a effect the exposure has? = “EFFECT SIZE”'**. To confirm causation, especially in epidemiology where direct experimentation is often unethical, evidence from **multiple studies** showing a statistically significant (low p-value) and substantial (large effect size) association across different populations is crucial."
+        },
+        {
+          "id": 43,
+          "question": "Why can a low p-value in a study sometimes be misleading when determining public health risks?",
+          "options": [
+            "It automatically proves causation.",
+            "It does not account for the strength or importance of the effect size.",
+            "It only applies to infectious diseases.",
+            "It reflects bias in the research design."
+          ],
+          "correct": 1,
+          "explanation": "The sources explicitly state that 'p-value only tells us whether the outcomes are due to chance or not. **It does not help us understand how strong the association is. It DOES NOT tell us how important the health implications are**'. Therefore, a low p-value, while indicating statistical significance, can be misleading for public health risk assessment because it does not quantify the magnitude or practical importance of the observed effect, which is measured by effect size."
+        },
+        {
+          "id": 44,
+          "question": "Which public health practice directly applies epidemiological data to reduce illness in a population?",
+          "options": [
+            "Health surveillance",
+            "Statistical education",
+            "Randomized interviews",
+            "Clinical treatment of individual patients"
+          ],
+          "correct": 0,
+          "explanation": "Epidemiology is defined as the 'study of the distribution and determinants of health-related states among specified populations and **the application of that study to the control of health problems**'. One of the key purposes of epidemiology in public health practice is to 'discover the agent, host, and environmental factors that affect health,' and to 'identify those segments of the population that have the greatest risk from specific causes of ill health'. This is achieved through **surveillance systems**, which are used to 'identify the problem' and then inform interventions, making surveillance a direct application to reduce illness in a population."
+        },
+        {
+          "id": 100,
+          "question": "In an observational study, researchers find a strong association between gym attendance and lower anxiety. Which factor must be ruled out before claiming causation?",
+          "options": [
+            "Statistical significance",
+            "Confounding variables (e.g., social support at the gym)",
+            "Random sampling",
+            "Sample size"
+          ],
+          "correct": 1,
+          "explanation": "The sources warn that 'Just because someone was exposed to something and they got sick, does not mean that the two events are related'. To determine if an observed association is truly causal, epidemiologists must carefully consider and rule out **'Confounding variables'**, which are 'other factors that confuses our interpretation of the exposure'. In this example, 'social support at the gym' is an external factor that could explain both gym attendance and lower anxiety, acting as a confounder."
+        },
+        {
+          "id": 105,
+          "question": "A researcher identifies that ice cream sales and drowning deaths rise together in summer. What is the relationship called?",
+          "options": [
+            "Direct causation",
+            "Spurious correlation (confounding by temperature)",
+            "Reverse causality",
+            "No correlation"
+          ],
+          "correct": 1,
+          "explanation": "This is a classic example of a **spurious correlation** caused by a confounding variable. The sources define **'Confounding'** as 'other factors that confuses our interpretation of the exposure'. In this case, hot summer temperatures are the underlying factor that independently drives both increased ice cream sales and increased swimming/drowning incidents, creating an apparent but not causal link between the two."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Sports Supplements, Uses & Effects",
+      "description": "Understanding the roles of various nutrients and supplements in athletic performance, including the risks of performance-enhancing drugs.",
+      "questions": [
+        {
+          "id": 65,
+          "question": "Which best explains why dietary supplements are not always reliable despite being sold legally?",
+          "options": [
+            "They are pre-approved for safety before sale.",
+            "They are completely regulated like prescription drugs.",
+            "The FDA monitors them only after they enter the market and only if issues arise.",
+            "They must pass extensive human trials before being sold."
+          ],
+          "correct": 2,
+          "explanation": "The sources state that sports supplements 'fall into the \"dietary supplement\" category and are **not effectively regulated, unless there is a problem with a supplement that is found to be harmful to the human body**'. It further clarifies that 'Dietary supplements are regulated by the FDA, but much of their role begins after products enter the marketplace,' and manufacturers 'do not have to submit proof of their efficacy or safety to the FDA'. This means they are not pre-approved for safety or efficacy in the same way as prescription drugs."
+        },
+        {
+          "id": 66,
+          "question": "Why might a female endurance athlete who avoids dairy products be at higher risk for stress fractures?",
+          "options": [
+            "Low calcium intake can weaken bones and increase fracture risk.",
+            "Avoiding dairy reduces hydration levels.",
+            "Dairy avoidance always causes muscle cramps.",
+            "Dairy contains protein that prevents fractures."
+          ],
+          "correct": 0,
+          "explanation": "The sources highlight that **'Calcium deficiency increases risk of stress fractures'**. Dairy products, such as milk, yogurt, and cheese, are identified as rich sources of calcium. For women, 'Restriction of dairy products' can lead to 'severe bone loss' and 'osteoporosis', directly linking low calcium intake to weakened bones and increased fracture risk."
+        },
+        {
+          "id": 67,
+          "question": "Which combination of nutrients is most appropriate immediately after intense exercise to promote muscle recovery?",
+          "options": [
+            "High fat and fiber",
+            "Carbohydrate to protein in a 3:1 or 4:1 ratio",
+            "Low carbohydrate and high protein only",
+            "Pure protein with no carbohydrate"
+          ],
+          "correct": 1,
+          "explanation": "For a **'Recovery Meal'**, the sources recommend a **'Carbohydrate to protein rich meal in the ratio of 3:1 or 4:1 within 2 hours'** after exercise. This specific ratio is crucial for replenishing glycogen stores (carbohydrates) and supporting muscle repair (protein) efficiently after intense physical activity."
+        },
+        {
+          "id": 68,
+          "question": "Which factor makes ephedrine especially dangerous as a sports supplement?",
+          "options": [
+            "It lowers heart rate dangerously.",
+            "It raises heart rate and blood pressure, increasing risks of seizures and psychosis.",
+            "It has no side effects at all.",
+            "It prevents muscle breakdown effectively."
+          ],
+          "correct": 1,
+          "explanation": "Ephedrine is described as a 'CNS stimulant and decongestant' that **'Increases heart rate and blood pressure'**. Its listed side effects include 'GI distress, dizziness, headache, seizure, psychosis'. The significant increase in cardiovascular load and severe neurological side effects make it particularly dangerous as a sports supplement."
+        },
+        {
+          "id": 69,
+          "question": "Which best differentiates anabolic steroids from human growth hormone (HGH) in healthy individuals?",
+          "options": [
+            "Both equally increase strength in healthy people.",
+            "Anabolic steroids improve muscle mass but carry severe side effects; HGH generally does not increase strength in healthy individuals.",
+            "HGH always boosts endurance more than steroids.",
+            "Anabolic steroids are safer than HGH."
+          ],
+          "correct": 1,
+          "explanation": "**Anabolic Steroids** 'can improve athletic performance at the expense of the body,' leading to severe side effects such as 'decrease in liver function and reproductive hormones,' and 'male breast formation,' as well as masculine traits in women. In contrast, **'Human growth hormone'** (HGH) is stated to 'Can improve strength in people who are deficient, but **has no effect on strength in healthy people**'. This clearly distinguishes their effects and risks in healthy individuals."
+        },
+        {
+          "id": 70,
+          "question": "Why are creatine users advised to increase their fluid intake?",
+          "options": [
+            "To promote fat loss.",
+            "To prevent dehydration and maintain safe kidney function.",
+            "To enhance the effects of creatine on bone density.",
+            "To reduce the chance of muscle tremors."
+          ],
+          "correct": 1,
+          "explanation": "The sources state that **'Athletes using creatine must drink adequate fluids'**. The explanation in the revision worksheet clarifies that creatine 'increases muscle water retention, and without enough fluid intake, it can lead to dehydration and strain on kidneys'. Therefore, increased fluid intake is essential to prevent dehydration and support healthy kidney function."
+        },
+        {
+          "id": 71,
+          "question": "What is the primary danger of using insulin as a performance-enhancing drug (PED) in healthy athletes?",
+          "options": [
+            "It causes excessive fat gain.",
+            "It can lead to hypoglycemia, coma, and death.",
+            "It always improves muscle endurance.",
+            "It boosts testosterone to unsafe levels."
+          ],
+          "correct": 1,
+          "explanation": "Insulin is listed among performance-enhancing drugs (PEDs) and is used by athletes to increase muscle mass and prevent protein breakdown. While the sources don't explicitly detail the specific dangers for healthy individuals, **misuse of insulin, especially in non-diabetic individuals, can cause a drastic drop in blood sugar levels (hypoglycemia), which can rapidly lead to seizures, coma, brain damage, or death.** This specific risk is common knowledge associated with insulin misuse but is not explicitly detailed in the provided sources."
+        },
+        {
+          "id": 72,
+          "question": "Which best explains why caffeine can improve endurance performance but may also be risky?",
+          "options": [
+            "It decreases energy availability while increasing focus.",
+            "It increases epinephrine, enhancing endurance, but can cause side effects like nausea and palpitations.",
+            "It promotes muscle protein breakdown.",
+            "It guarantees muscle mass gain."
+          ],
+          "correct": 1,
+          "explanation": "Caffeine is a 'CNS stimulant' that 'increases epinephrine levels,' and consuming 3 to 6 mg of caffeine per kg 'may improve endurance'. However, the sources also list significant side effects, including **'nausea, muscle tremor, palpitations and headache'**. Thus, it offers performance benefits but carries clear risks due to its stimulant effects."
+        },
+        {
+          "id": 73,
+          "question": "Which strategy would best help an athlete choose a safe and effective dietary supplement?",
+          "options": [
+            "Buy products with exaggerated performance claims.",
+            "Select supplements endorsed by professional athletes only.",
+            "Choose products with the USP or ConsumerLab seal of approval.",
+            "Prioritize supplements that promise instant results."
+          ],
+          "correct": 2,
+          "explanation": "To choose a supplement wisely, the sources recommend looking for **'Products that have USP (United States Pharmacopeia) on the supplement label'** and **'Products eligible for ConsumerLab seal of approval – www.consumerlab.com'**. These seals indicate that the product has been verified for purity, potency, and quality by independent third parties, offering a level of assurance not guaranteed by manufacturers' claims or endorsements."
+        },
+        {
+          "id": 74,
+          "question": "Why is the ATP system insufficient for prolonged exercise?",
+          "options": [
+            "ATP is not used in endurance activities.",
+            "The body stores only small amounts of ATP, requiring other energy sources for extended activity.",
+            "ATP cannot be produced without supplements.",
+            "ATP production stops when carbohydrates are consumed."
+          ],
+          "correct": 1,
+          "explanation": "**ATP (adenosine triphosphate)** is the 'Chemical energy' used by cells for muscle contractions. However, the sources specify that **'Only small amount is stored in resting cells'**. Therefore, for sustained activity like prolonged exercise, **'Other sources of energy are needed'** to continue ATP formation, making the immediate ATP stores insufficient on their own."
+        },
+        {
+          "id": 75,
+          "question": "Which best distinguishes a performance-enhancing drug (PED) from a standard sports supplement?",
+          "options": [
+            "PEDs have no side effects.",
+            "PEDs are always safe and legal.",
+            "PEDs aim to directly alter hormones or physiological functions beyond normal levels, often carrying significant risks.",
+            "Standard supplements never improve performance."
+          ],
+          "correct": 2,
+          "explanation": "**Performance-enhancing drugs (PEDs)** like anabolic steroids, human growth hormone, and insulin are listed with explicit mechanisms that **'can improve athletic performance at the expense of the body,'** leading to severe side effects such as liver damage, hormonal imbalances, and psychological issues. They are designed to directly manipulate physiological processes. In contrast, standard sports supplements are broadly defined as aids to build muscle, lose weight, or improve endurance, but are often 'not effectively regulated' and their efficacy and safety may not be proven."
+        },
+        {
+          "id": 76,
+          "question": "Why might excessive protein intake fail to benefit an endurance athlete?",
+          "options": [
+            "Protein cannot be used for muscle repair.",
+            "The body converts excess protein to fat or excretes it without improving performance.",
+            "Protein blocks carbohydrate absorption.",
+            "High protein diets always increase endurance."
+          ],
+          "correct": 1,
+          "explanation": "The sources state that an athlete's protein needs are 'easily met by a normal diet' and that **'Excessive protein has not been shown to be beneficial'**. When protein intake exceeds the body's needs for muscle repair, growth, or energy, the excess is not stored as additional muscle mass; instead, it can be converted into glucose or fat and stored, or excreted. Thus, beyond a certain point, consuming more protein offers no additional performance benefits and may contribute to fat storage."
+        },
+        {
+          "id": 77,
+          "question": "Which best explains why athletes are advised to limit trans fats in their diets?",
+          "options": [
+            "Trans fats directly increase endurance.",
+            "Trans fats improve muscle mass but impair flexibility.",
+            "Trans fats increase cardiovascular disease risk without providing performance benefits.",
+            "Trans fats are essential for post-workout recovery."
+          ],
+          "correct": 2,
+          "explanation": "**Trans fats** are explicitly labeled as **'Bad for heart as it raises LDL and lowers HDL levels'**. Foods containing trans fats are often processed and unhealthy. While not directly stated as impairing athletic performance benefits, increasing the risk of cardiovascular disease is detrimental to overall health and long-term athletic capacity, making their limitation advisable for athletes focused on optimal health."
+        },
+        {
+          "id": 101,
+          "question": "An athlete consuming high doses of protein supplements reports dehydration and frequent muscle cramps. Which supplement-related risk is most likely involved?",
+          "options": [
+            "Vitamin toxicity",
+            "Creatine water retention without sufficient hydration",
+            "Insulin resistance",
+            "Calcium overdose"
+          ],
+          "correct": 1,
+          "explanation": "The sources state that athletes using **creatine 'must drink adequate fluids'**. The revision worksheet further clarifies that creatine 'increases muscle water retention, and without enough fluid intake, it can lead to dehydration and strain on kidneys'. This dehydration can manifest as muscle cramps. While excessive protein intake can also strain kidneys, the specific mention of fluid requirements for creatine users makes this the most likely link."
+        },
+        {
+          "id": 110,
+          "question": "A female athlete using anabolic steroids develops voice deepening and menstrual irregularities. What mechanism explains this?",
+          "options": [
+            "Steroid use reduces protein synthesis",
+            "Steroid use increases male hormone activity in females, disrupting natural hormonal balance",
+            "Steroids only affect muscle tissue",
+            "Steroids improve cardiovascular health"
+          ],
+          "correct": 1,
+          "explanation": "**Anabolic steroids** are synthetic derivatives of testosterone, a male hormone. The sources explicitly state that in women, anabolic steroids can lead to 'increase in acne, hair loss, male pattern baldness, **lowering of the voice, increased facial hair, and breast atrophy, masculine facial traits**'. These effects are characteristic of **virilization**, caused by increased male hormone activity, which disrupts natural hormonal balance and leads to menstrual irregularities and the development of secondary male characteristics."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Nutrition & Health Disorders",
+      "description": "An overview of essential nutrients, dietary guidelines, and health disorders linked to nutritional imbalances.",
+      "questions": [
+        {
+          "id": 78,
+          "question": "Which best distinguishes gender equality from gender equity?",
+          "options": [
+            "Equality and equity are identical concepts.",
+            "Equality provides identical resources to everyone; equity adjusts resources to address existing disadvantages.",
+            "Equity promotes uniform treatment regardless of needs; equality adjusts to individual needs.",
+            "Equality focuses only on income distribution."
+          ],
+          "correct": 1,
+          "explanation": "While the sources do not explicitly define 'gender equality' versus 'gender equity,' they define **health equity** as **'when all people have the equal opportunity to attain their full health potential'**. It acknowledges that 'health disparities result from systemic and avoidable social and economic practices and policies that create barriers for some groups'. This implies that merely providing identical resources (equality) is insufficient if systemic barriers exist. True equity often requires **adjusting resources or approaches to address existing disadvantages** to ensure equal opportunities."
+        },
+        {
+          "id": 79,
+          "question": "Why is improving women’s education directly linked to better child health outcomes in developing countries?",
+          "options": [
+            "Educated women have lower fertility rates only.",
+            "Higher maternal education is associated with lower child mortality due to better healthcare decision-making and economic opportunities.",
+            "Education prevents all childhood illnesses.",
+            "Mothers’ education has no measurable effect on child health."
+          ],
+          "correct": 1,
+          "explanation": "The sources emphasize that **socioeconomic status** has a significant impact on health outcomes, and that **social determinants of health** influence the options and choices individuals have. **Health literacy** (the ability to understand and act on health information) is also crucial. **While not explicitly stated in the provided sources, it is widely recognized that higher maternal education levels contribute to better child health outcomes by empowering women with improved health literacy, better healthcare decision-making skills, enhanced economic opportunities, and greater agency within their families and communities, leading to better nutrition, sanitation, and access to care for their children.**"
+        },
+        {
+          "id": 80,
+          "question": "Which is a primary reason violence against women is considered a major public health issue?",
+          "options": [
+            "It rarely affects mental health.",
+            "Its effects are limited to temporary physical injuries.",
+            "It can cause long-term physical, mental, reproductive, and social health problems.",
+            "It only affects women from specific cultural backgrounds."
+          ],
+          "correct": 2,
+          "explanation": "Health is defined as 'a state of complete physical, mental, social, and spiritual well-being'. Violence against women severely compromises all these dimensions. While the specific effects are not detailed in the general health sources, the revision worksheet explicitly states that violence against women 'can cause **long-term physical, mental, reproductive, and social health problems**'. This comprehensive negative impact makes it a significant public health issue that contributes to health disparities."
+        },
+        {
+          "id": 81,
+          "question": "Which barrier most often prevents women from accessing timely healthcare in some developing regions?",
+          "options": [
+            "Overabundance of healthcare providers.",
+            "Cultural factors, including lack of female healthcare workers and exclusion from health-related decision-making.",
+            "Universal free healthcare access.",
+            "Women’s health conditions are always prioritized."
+          ],
+          "correct": 1,
+          "explanation": "The sources highlight that **sociocultural factors** influence health behaviors and access, and that **health disparities** exist across groups, including those based on ethnicity and race. The ability to interact effectively within a social environment is essential for social health. The revision worksheet explicitly identifies **'Cultural factors, including lack of female healthcare workers and exclusion from health-related decision-making'** as significant barriers for women in accessing healthcare, particularly in certain developing regions."
+        },
+        {
+          "id": 82,
+          "question": "Why is occupational health a significant concern in public health policy?",
+          "options": [
+            "Workplace hazards only affect productivity, not health.",
+            "Poor workplace conditions can lead to a wide range of diseases, injuries, and stress-related disorders that impact workers' overall health and healthcare costs.",
+            "Only physical injuries occur in workplaces.",
+            "Occupational health does not influence mental health outcomes."
+          ],
+          "correct": 1,
+          "explanation": "Public policy is a factor influencing health opportunities, and community health activities aim to improve the health of the whole community. Poor workplace conditions are an environmental factor affecting health. The revision worksheet explains directly that **'Poor workplace conditions can lead to a wide range of diseases, injuries, and stress-related disorders that impact workers' overall health and healthcare costs'**. Furthermore, stress, which can be workplace-related, contributes to both physical and mental health issues, making occupational health a comprehensive public health concern."
+        },
+        {
+          "id": 83,
+          "question": "Which factor most significantly contributes to gender inequality in workplace leadership roles?",
+          "options": [
+            "Equal representation in executive positions.",
+            "Cultural and structural biases that limit women's access to leadership opportunities despite qualifications.",
+            "Women's lack of interest in leadership roles.",
+            "Legal restrictions preventing women from working."
+          ],
+          "correct": 1,
+          "explanation": "The concept of **health equity** highlights that disparities often 'result from systemic and avoidable social and economic practices and policies that create barriers for some groups'. This principle extends to workplace inequalities. The revision worksheet explicitly states that **'Cultural and structural biases that limit women's access to leadership opportunities despite qualifications'** are a significant contributing factor to gender inequality in leadership roles."
+        },
+        {
+          "id": 84,
+          "question": "Which health risk is more common among women exposed to occupational hazards compared to men?",
+          "options": [
+            "Reduced risk of injury.",
+            "Increased likelihood of reproductive health complications and musculoskeletal disorders.",
+            "Complete immunity to chemical exposure.",
+            "Higher resistance to stress-related disorders."
+          ],
+          "correct": 1,
+          "explanation": "While the general sources discuss gender differences in health, such as fat distribution and health disparities based on gender, they do not detail gender-specific occupational hazards. However, the revision worksheet specifies that women exposed to occupational hazards face an **'Increased likelihood of reproductive health complications and musculoskeletal disorders'** compared to men. This indicates that certain workplace risks disproportionately affect women's health."
+        },
+        {
+          "id": 85,
+          "question": "Why does gender equality have broader societal benefits beyond individual rights?",
+          "options": [
+            "It primarily benefits men’s well-being.",
+            "It has no measurable impact on social development.",
+            "Gender equality promotes human rights, enhances economic productivity, reduces poverty, and improves family and community health.",
+            "It slows down societal growth to promote stability."
+          ],
+          "correct": 2,
+          "explanation": "The sources emphasize that **community health activities** aim to improve the health of a whole community, and that **economic, social, and public policy** affect health opportunities. **Gender equality**, by removing systemic barriers (as implied by the definition of health equity), contributes to overall societal well-being. The revision worksheet explicitly states that gender equality **'promotes human rights, enhances economic productivity, reduces poverty, and improves family and community health'**, demonstrating its widespread societal advantages."
+        },
+        {
+          "id": 86,
+          "question": "Which best explains why women living in poverty may experience more severe occupational health risks?",
+          "options": [
+            "They often work in low-risk industries.",
+            "They have less access to workplace safety protections and healthcare services.",
+            "Occupational health risks decrease with lower income.",
+            "Women in poverty usually avoid working in hazardous environments."
+          ],
+          "correct": 1,
+          "explanation": "**Socioeconomic status** has the most significant impact on health outcomes, and **worse health status is strongly associated with poverty**. Social determinants influence exposure to environmental carcinogens and access to health care. The revision worksheet directly states that women in poverty **'have less access to workplace safety protections and healthcare services'**, which explains why they may face more severe occupational health risks due to their limited resources and options."
+        },
+        {
+          "id": 87,
+          "question": "Why is addressing gender-based violence essential for improving reproductive health outcomes?",
+          "options": [
+            "Violence only affects emotional well-being.",
+            "Physical injuries are the only concern.",
+            "Violence can lead to sexually transmitted infections (STIs), unintended pregnancies, and complications during childbirth, severely impacting reproductive health.",
+            "Addressing violence has no impact on reproductive health."
+          ],
+          "correct": 2,
+          "explanation": "Health is defined as a holistic state of physical, mental, and social well-being, all of which are severely impacted by violence. While not explicitly detailed in the general health sources, the revision worksheet directly states that violence **'can lead to sexually transmitted infections (STIs), unintended pregnancies, and complications during childbirth, severely impacting reproductive health'**. This highlights the direct and severe consequences of gender-based violence on reproductive health."
+        },
+        {
+          "id": 88,
+          "question": "Which best explains why higher income and social status are consistently linked to better health outcomes?",
+          "options": [
+            "Wealth directly changes genetic makeup.",
+            "Higher income increases access to health-promoting resources and reduces stress linked to financial instability.",
+            "Wealth prevents all diseases.",
+            "Low income always results in poor nutrition only."
+          ],
+          "correct": 1,
+          "explanation": "**Socioeconomic status** has 'the most significant impact on health outcomes'. **Worse health status is strongly associated with poverty**, due to factors like less ability to physically distance, work from home, or take leave. Conversely, **higher income alleviates these constraints, increasing access to better nutrition, safer living environments, quality healthcare, and generally reducing chronic stress associated with financial instability**, thereby leading to better health outcomes."
+        },
+        {
+          "id": 89,
+          "question": "Why is it inappropriate to blame individuals entirely for poor health outcomes according to the determinants of health model?",
+          "options": [
+            "Genetics is the only cause of illness.",
+            "Many health determinants such as environment, income, and social status are beyond individual control.",
+            "Health behaviors are never a factor.",
+            "Everyone has equal control over all health determinants."
+          ],
+          "correct": 1,
+          "explanation": "The **sociological model of health** identifies 'complex levels and interrelationships that influence your health', including **social and physical environments, community norms, and economic, social, and public policy**. It also states that 'Many social determinants of health influence the options you have and the choices you make'. An ethical question raised is: **'Are individuals responsible for their health choices, given the powerful influence of their environment?'**. This framework strongly suggests that many factors affecting health are indeed beyond individual control."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Fitness and Physical Activity",
+      "description": "Understanding components of physical fitness, recommended guidelines, and safe practices for exercise and training.",
+      "questions": [
+        {
+          "id": 111,
+          "question": "A man with lung cancer has a five-year survival rate of 60% because his cancer was detected early. This highlights the importance of:",
+          "options": [
+            "Ignoring staging",
+            "Late-stage diagnosis",
+            "Early detection and screening",
+            "Experimental treatment only"
+          ],
+          "correct": 2,
+          "explanation": "The sources explicitly state regarding lung cancer that **'If detected early, which is rare, survival increases to 60 percent'**. Furthermore, it's noted that 'Treatment is more successful the earlier the cancer is identified'. This directly underscores the critical importance of **early detection and screening** in improving cancer treatment outcomes and survival rates."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Body Weight and Body Composition",
+      "description": "Defining healthy body weight, assessing body composition, and exploring factors influencing weight and management strategies.",
+      "questions": [
+        {
+          "id": 30,
+          "question": "A man’s BMI is calculated as 31.2 kg/m². According to international guidelines, he would be classified as:",
+          "options": [
+            "Normal weight",
+            "Overweight",
+            "Obese",
+            "Morbidly obese"
+          ],
+          "correct": 2,
+          "explanation": "According to the Body Mass Index (BMI) classifications, a BMI of **'30 or greater' is classified as 'Obese'**. Therefore, a BMI of 31.2 kg/m² falls into the obese category."
+        },
+        {
+          "id": 31,
+          "question": "A male patient has a waist circumference of 106 cm. What can be inferred about his disease risk?",
+          "options": [
+            "Normal risk",
+            "Increased risk due to visceral fat",
+            "No risk if BMI is normal",
+            "Risk only if cholesterol is also elevated"
+          ],
+          "correct": 1,
+          "explanation": "The sources state that **'Where you carry your body fat is important in determining your health risk'**. Specifically, **'Large abdominal circumference is associated with high cholesterol levels and a higher risk for heart disease, stroke, diabetes, and hypertension'**. Men with obesity tend to accumulate abdominal fat. This abdominal fat is often **visceral fat**, which surrounds internal organs and is metabolically active, directly leading to 'increased risk' for these diseases. Even with a healthy BMI, a large waist can signify an independent risk."
+        },
+        {
+          "id": 98,
+          "question": "A 45-year-old woman has a BMI of 23 but a waist circumference of 105 cm. What does this indicate?",
+          "options": [
+            "Normal overall risk",
+            "Elevated risk due to central adiposity despite normal BMI",
+            "No health concern",
+            "Underweight condition"
+          ],
+          "correct": 1,
+          "explanation": "A BMI of 23 falls within the 'Healthy weight' range (18.5 to 24.9). However, the sources explicitly state that **'If your BMI is in the healthy range, a large waist may signify an independent risk for disease'**. A large waist circumference indicates **central adiposity** (abdominal fat), which is 'associated with high cholesterol levels and a higher risk for heart disease, stroke, diabetes, and hypertension'. Therefore, she has an elevated risk despite her healthy BMI."
+        },
+        {
+          "id": 107,
+          "question": "Why is waist circumference often a better cardiovascular risk indicator than BMI in athletes?",
+          "options": [
+            "It reflects only bone density",
+            "It better accounts for visceral fat, which BMI cannot distinguish from muscle",
+            "BMI always underestimates risk",
+            "Waist circumference reflects hydration status"
+          ],
+          "correct": 1,
+          "explanation": "The sources explain that **'BMI may incorrectly estimate risk for some people'**, particularly for 'those with a muscular build, BMI may overestimate body fat'. In contrast, **'Where you carry your body fat is important in determining your health risk'**, with **'Large abdominal circumference'** being 'associated with high cholesterol levels and a higher risk for heart disease, stroke, diabetes, and hypertension'. Waist circumference specifically measures this metabolically active **visceral fat**, which BMI cannot accurately distinguish from lean muscle mass in athletes, making it a more precise indicator of cardiovascular risk."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Cancer",
+      "description": "Defining cancer, understanding its growth and classification, identifying risk factors, and outlining various treatment approaches.",
+      "questions": [
+        {
+          "id": 46,
+          "question": "Which best explains why stem cells, while vital for tissue repair, pose a higher risk for cancer?",
+          "options": [
+            "They divide slowly and predictably.",
+            "They are shielded from mutations.",
+            "They can divide indefinitely and may accumulate mutations.",
+            "They lack any DNA repair mechanisms."
+          ],
+          "correct": 2,
+          "explanation": "**Stem cells** are described as 'undifferentiated cells that can give rise to specialized cells'. The source states that **'Because they do not have a predetermined number of cell divisions, they pose a risk of cancer'**. This ability to divide indefinitely means they have more opportunities over time to acquire the 'series of 5 to 10 critical mutations' within their genetic material that can lead to uncontrolled growth and cancer."
+        },
+        {
+          "id": 47,
+          "question": "A tumor that grows slowly and does not invade nearby tissues is classified as:",
+          "options": [
+            "Malignant",
+            "Benign",
+            "Metastatic",
+            "Invasive"
+          ],
+          "correct": 1,
+          "explanation": "A **'benign tumor'** is defined as having **'Slow growth, unlikely to spread'**. This distinguishes it from a malignant tumor, which is capable of spreading and invading surrounding tissues."
+        },
+        {
+          "id": 48,
+          "question": "Which best distinguishes Stage II cancer from Stage IV cancer?",
+          "options": [
+            "Stage II is always benign.",
+            "Stage II is localized or locally advanced; Stage IV has metastasized to distant organs.",
+            "Stage II has spread throughout the entire body.",
+            "Stage IV is always curable."
+          ],
+          "correct": 1,
+          "explanation": "The common cancer staging system classifies **'Stages II and III' as 'Locally advanced; may involve lymph nodes'**, indicating growth beyond the original site but still regional. In contrast, **'Stage IV' is defined as 'Metastasized to distant sites,'** meaning the cancer has spread far from its primary origin to other organs. This distinct difference in spread is the key distinction."
+        },
+        {
+          "id": 49,
+          "question": "Why does chemotherapy often lead to side effects like hair loss and nausea?",
+          "options": [
+            "It targets only cancer cells.",
+            "It affects rapidly dividing cells, including healthy ones like hair follicles and stomach lining.",
+            "It strengthens the immune system.",
+            "It prevents all cell division."
+          ],
+          "correct": 1,
+          "explanation": "**Chemotherapy** is a 'drug treatment administered to the entire body to kill rapidly dividing cancer cells'. However, its mechanism also leads to side effects because it **'Also kills rapidly dividing normal cells, including hair, stomach lining, and white blood cells'**. The damage to healthy, rapidly dividing cells in hair follicles causes hair loss, and damage to the stomach lining causes nausea."
+        },
+        {
+          "id": 50,
+          "question": "Which cancer type originates from connective tissues such as bone, muscle, or fat?",
+          "options": [
+            "Carcinoma",
+            "Leukemia",
+            "Sarcoma",
+            "Lymphoma"
+          ],
+          "correct": 2,
+          "explanation": "Cancers are classified according to their tissue of origin. **'Sarcomas'** are specifically defined as cancers that **'arise in connective tissue (bone, tendon, cartilage, muscle, fat tissues)'**. This distinguishes them from carcinomas (epithelial tissue), leukemias (blood/bone marrow), and lymphomas (lymph nodes)."
+        },
+        {
+          "id": 51,
+          "question": "A woman has a family history of breast cancer and begins screening earlier than general guidelines recommend. This reflects which concept?",
+          "options": [
+            "Universal screening",
+            "Risk-based screening",
+            "Overdiagnosis",
+            "Chemoprevention"
+          ],
+          "correct": 1,
+          "explanation": "The sources state that 'A **family history of cancer alters some cancer screening recommendations**', and that 'Genetic screening' is 'currently reserved for members of high-risk families'. This practice of tailoring screening recommendations based on an individual's specific risk factors, such as family history, is known as **risk-based screening**."
+        },
+        {
+          "id": 52,
+          "question": "What best explains why cancer screening programs aim for early detection?",
+          "options": [
+            "Early-stage cancers require no treatment.",
+            "Early detection often improves treatment success and survival rates.",
+            "Early detection prevents all metastasis.",
+            "Early detection always eliminates the need for chemotherapy."
+          ],
+          "correct": 1,
+          "explanation": "The sources clearly state that **'Treatment is more successful the earlier the cancer is identified'**. For example, lung cancer survival dramatically increases from 22% to 60% if detected early. This emphasizes that **early detection through screening programs significantly improves the chances of successful treatment and overall survival rates** by allowing intervention before the cancer progresses or metastasizes extensively."
+        },
+        {
+          "id": 53,
+          "question": "Which term describes cancer that has spread from its original site to distant organs?",
+          "options": [
+            "In situ",
+            "Localized",
+            "Metastatic",
+            "Benign"
+          ],
+          "correct": 2,
+          "explanation": "**'Metastasis'** is defined as 'a process by which cancer cells spread from one part of the body to another'. When cancer has metastasized, it is referred to as **'Stage IV: Metastasized to distant sites'**. Therefore, cancer that has spread to distant organs is described as metastatic."
+        },
+        {
+          "id": 54,
+          "question": "Which best distinguishes chemotherapy from biological therapies?",
+          "options": [
+            "Chemotherapy targets the immune system; biological therapies target cancer DNA.",
+            "Chemotherapy affects the whole body; biological therapies aim to enhance the immune system’s cancer-fighting ability.",
+            "Biological therapies have more severe side effects than chemotherapy.",
+            "Both only target healthy cells."
+          ],
+          "correct": 1,
+          "explanation": "**Chemotherapy** is described as a 'Drug treatment administered to the entire body to kill rapidly dividing cancer cells' (and normal cells). In contrast, **'Biological therapies'** (immunotherapy) 'Aim to enhance the immune system’s ability to fight cancer' or reduce chemotherapy side effects. The key distinction is that chemotherapy is a systemic cytotoxic drug, while biological therapies specifically leverage or modify the body's immune response."
+        }
+      ]
+    }
+  ]
+};
 
         function loadChapters() {
             try {
