@@ -106,6 +106,32 @@
             transform: translateX(5px) !important;
         }
 
+        .chapter-item.completed {
+            background: linear-gradient(135deg, #2ed573 0%, #17c0eb 100%) !important;
+            border-color: #2ed573 !important;
+            box-shadow: 0 4px 15px rgba(46, 213, 115, 0.4) !important;
+        }
+
+        .chapter-item.completed::after {
+            content: "✓";
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .chapter-item {
+            position: relative;
+        }
+
         .chapter-title {
             font-weight: 600;
             font-size: 1rem;
@@ -294,6 +320,7 @@
         }
 
         .option.correct {
+            /* background: linear-gradient(135deg, #2ed573 0%, #17c0eb 100%); */
             background-color: #2ed573;
             border-color: #2ed573;
             color: white;
@@ -606,6 +633,11 @@
             font-size: 0.8rem;
             font-weight: 600;
         }
+
+        .stats button:hover {
+            background: rgba(255, 255, 255, 0.2) !important;
+            border-color: rgba(255, 255, 255, 0.5) !important;
+        }
     </style>
 </head>
 <body>
@@ -644,6 +676,9 @@
                     <span>Accuracy:</span>
                     <span id="overallAccuracy">0%</span>
                 </div>
+                <button onclick="clearProgress()" style="width: 100%; margin-top: 1rem; padding: 0.5rem; background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 8px; cursor: pointer; font-size: 0.8rem; transition: all 0.3s ease;">
+                    Clear Progress
+                </button>
             </div>
         </div>
         
@@ -661,6 +696,62 @@
         let chaptersData = [];
         let userAnswers = {};
         let currentActiveChapter = null;
+        
+        // Local Storage Keys
+        const STORAGE_KEY = 'health_study_progress';
+        const STORAGE_VERSION = '1.0';
+
+        // Local Storage Functions
+        function saveProgress() {
+            const progressData = {
+                version: STORAGE_VERSION,
+                userAnswers: userAnswers,
+                timestamp: new Date().toISOString()
+            };
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(progressData));
+        }
+
+        function loadProgress() {
+            try {
+                const savedData = localStorage.getItem(STORAGE_KEY);
+                if (savedData) {
+                    const progressData = JSON.parse(savedData);
+                    if (progressData.version === STORAGE_VERSION) {
+                        userAnswers = progressData.userAnswers || {};
+                        console.log('Progress loaded from localStorage');
+                        return true;
+                    } else {
+                        console.log('Progress data version mismatch, starting fresh');
+                        localStorage.removeItem(STORAGE_KEY);
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading progress:', error);
+                localStorage.removeItem(STORAGE_KEY);
+            }
+            return false;
+        }
+
+        function clearProgress() {
+            if (confirm('Are you sure you want to clear all progress? This cannot be undone.')) {
+                localStorage.removeItem(STORAGE_KEY);
+                userAnswers = {};
+                location.reload();
+            }
+        }
+
+        function isChapterCompleted(chapterId) {
+            const chapter = chaptersData.find(c => c.id === chapterId);
+            if (!chapter) return false;
+            
+            const totalQuestions = chapter.questions.length;
+            const answeredQuestions = chapter.questions.filter(q => {
+                const questionKey = `${chapterId}-${q.id}`;
+                return userAnswers[questionKey] !== undefined;
+            }).length;
+            
+            return answeredQuestions === totalQuestions;
+        }
 
         // Embedded chapters data
         const studyData = {
@@ -2046,6 +2137,9 @@
 
         function loadChapters() {
             try {
+                // Load progress from localStorage first
+                loadProgress();
+                
                 chaptersData = studyData.chapters;
                 if (!chaptersData || chaptersData.length === 0) {
                     showError('No study content found.');
@@ -2087,11 +2181,16 @@
                 const answered = getChapterAnsweredCount(chapter.id);
                 const total = chapter.questions.length;
                 const progress = total > 0 ? (answered / total) * 100 : 0;
+                const isCompleted = isChapterCompleted(chapter.id);
+                
+                if (isCompleted) {
+                    chapterItem.classList.add('completed');
+                }
                 
                 chapterItem.innerHTML = `
                     <div class="chapter-title">Chapter ${chapter.id}</div>
                     <div style="font-size: 0.9rem; margin-bottom: 0.5rem;">${chapter.title}</div>
-                    <div class="chapter-progress">${answered}/${total} completed</div>
+                    <div class="chapter-progress">${answered}/${total} completed${isCompleted ? '' : ''}</div>
                     <div class="progress-bar">
                         <div class="progress-fill" style="width: ${progress}%"></div>
                     </div>
@@ -2105,6 +2204,15 @@
             const container = document.getElementById('chaptersContainer');
             container.innerHTML = '';
             
+            // Add header with progress info
+            const header = document.createElement('div');
+            header.className = 'header';
+            header.innerHTML = `
+                <h1>Health Determinants Study Guide</h1>
+                <p>Interactive study guide with automatic progress saving. Your answers are saved locally and will persist between sessions.</p>
+            `;
+            container.appendChild(header);
+            
             chaptersData.forEach((chapter, index) => {
                 const chapterSection = document.createElement('div');
                 chapterSection.className = 'chapter-section';
@@ -2113,16 +2221,18 @@
                 const answered = getChapterAnsweredCount(chapter.id);
                 const correct = getChapterCorrectCount(chapter.id);
                 const accuracy = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+                const isCompleted = isChapterCompleted(chapter.id);
                 
                 chapterSection.innerHTML = `
                     <div class="chapter-header">
-                        <div class="chapter-number">Chapter ${chapter.id}</div>
+                        <div class="chapter-number">Chapter ${chapter.id}${isCompleted ? ' ✅' : ''}</div>
                         <h2 class="chapter-title-main">${chapter.title}</h2>
                         <p class="chapter-description">${chapter.description}</p>
                         <div class="chapter-stats">
                             <div class="stat-badge">${chapter.questions.length} Questions</div>
                             <div class="stat-badge">${answered} Answered</div>
                             <div class="stat-badge">${accuracy}% Accuracy</div>
+                            ${isCompleted ? '<div class="stat-badge" style="background: linear-gradient(135deg, #2ed573 0%, #17c0eb 100%);">Complete</div>' : ''}
                         </div>
                     </div>
                     
@@ -2136,7 +2246,7 @@
                 // Animate in with delay
                 setTimeout(() => {
                     chapterSection.classList.add('visible');
-                }, index * 200);
+                }, (index + 1) * 200); // +1 to account for header
             });
         }
 
@@ -2190,6 +2300,9 @@
             
             userAnswers[questionKey] = optionIndex;
             
+            // Save progress to localStorage
+            saveProgress();
+            
             // Find the question data
             const [chapterId, questionId] = questionKey.split('-').map(Number);
             const chapter = chaptersData.find(c => c.id === chapterId);
@@ -2233,6 +2346,9 @@
             
             // Mark as "viewed" but not answered correctly
             userAnswers[questionKey] = -1; // Special value for "showed answer"
+            
+            // Save progress to localStorage
+            saveProgress();
             
             // Update the question display
             const questionCard = document.querySelector(`#explanation-${questionKey}`).closest('.question-card');
@@ -2302,12 +2418,20 @@
                     const answered = getChapterAnsweredCount(chapter.id);
                     const total = chapter.questions.length;
                     const progress = total > 0 ? (answered / total) * 100 : 0;
+                    const isCompleted = isChapterCompleted(chapter.id);
+                    
+                    // Update completion status
+                    if (isCompleted && !chapterItem.classList.contains('completed')) {
+                        chapterItem.classList.add('completed');
+                    } else if (!isCompleted && chapterItem.classList.contains('completed')) {
+                        chapterItem.classList.remove('completed');
+                    }
                     
                     const progressBar = chapterItem.querySelector('.progress-fill');
                     const progressText = chapterItem.querySelector('.chapter-progress');
                     
                     if (progressBar) progressBar.style.width = `${progress}%`;
-                    if (progressText) progressText.textContent = `${answered}/${total} completed`;
+                    if (progressText) progressText.textContent = `${answered}/${total} completed${isCompleted ? ' ✅' : ''}`;
                 }
             });
         }
