@@ -9,11 +9,17 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #444 0%, #5687e7 100%);
+            background: #5687e7;
             color: #333;
             overflow-x: hidden;
         }
@@ -23,6 +29,29 @@
             min-height: 100vh;
         }
 
+        /* Custom scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        /* For Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+        }
         /* Sidebar */
         .sidebar {
             width: 320px;
@@ -58,6 +87,11 @@
             cursor: pointer;
             transition: all 0.3s ease;
             color: white;
+            touch-action: manipulation;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .chapter-item:hover {
@@ -66,9 +100,10 @@
         }
 
         .chapter-item.active {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            border-color: #4facfe;
-            box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+            background: linear-gradient(135deg, #4facfe 0%, #5687e7 100%) !important;
+            border-color: #4facfe !important;
+            box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4) !important;
+            transform: translateX(5px) !important;
         }
 
         .chapter-title {
@@ -123,7 +158,7 @@
             flex: 1;
             margin-left: 320px;
             padding: 2rem;
-            max-width: 900px;
+            /* max-width: 900px; */
         }
 
         .header {
@@ -171,7 +206,7 @@
         }
 
         .chapter-number {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #4facfe 0%, #5687e7 100%);
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 20px;
@@ -199,7 +234,6 @@
             border-radius: 16px;
             padding: 2rem;
             margin-bottom: 2rem;
-            border-left: 4px solid #4facfe;
             transition: all 0.3s ease;
         }
 
@@ -242,6 +276,8 @@
             display: flex;
             align-items: center;
             font-weight: 500;
+            touch-action: manipulation;
+            min-height: 60px;
         }
 
         .option:hover {
@@ -251,7 +287,7 @@
         }
 
         .option.selected {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #4facfe 0%, #5687e7 100%);
             border-color: #4facfe;
             color: white;
             box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
@@ -344,7 +380,7 @@
         }
 
         .show-answer-btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #667eea 0%, #5687e7 100%);
             color: white;
             border: none;
             padding: 0.8rem 1.5rem;
@@ -353,6 +389,8 @@
             cursor: pointer;
             transition: all 0.3s ease;
             font-size: 0.9rem;
+            touch-action: manipulation;
+            min-height: 44px;
         }
 
         .show-answer-btn:hover {
@@ -371,6 +409,7 @@
             .sidebar {
                 transform: translateX(-100%);
                 width: 100%;
+                padding: 1rem;
             }
 
             .sidebar.open {
@@ -382,8 +421,22 @@
                 padding: 1rem;
             }
 
+            .header {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
             .header h1 {
                 font-size: 2rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+
+            .chapter-section {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
             }
 
             .chapter-title-main {
@@ -396,6 +449,62 @@
 
             .question-card {
                 padding: 1.5rem;
+            }
+
+            .option {
+                padding: 0.8rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .option-letter {
+                width: 25px;
+                height: 25px;
+                font-size: 0.8rem;
+                margin-right: 0.8rem;
+            }
+
+            .chapter-stats {
+                justify-content: center;
+                gap: 0.5rem;
+            }
+
+            .stat-badge {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.7rem;
+            }
+
+            .back-to-top {
+                bottom: 1rem;
+                right: 1rem;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.7rem;
+            }
+
+            .chapter-title-main {
+                font-size: 1.3rem;
+            }
+
+            .question-card {
+                padding: 1rem;
+            }
+
+            .question-text {
+                font-size: 1rem;
+            }
+
+            .option {
+                padding: 0.7rem 0.8rem;
+            }
+
+            .chapter-stats {
+                flex-direction: column;
+                align-items: center;
             }
         }
 
@@ -458,12 +567,12 @@
             position: fixed;
             bottom: 2rem;
             right: 2rem;
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #4facfe 0%, #5687e7 100%);
             color: white;
             border: none;
             width: 50px;
             height: 50px;
-            border-radius: 50%;
+            border-radius: 5px;
             cursor: pointer;
             font-size: 1.2rem;
             transition: all 0.3s ease;
@@ -490,7 +599,7 @@
         }
 
         .stat-badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #667eea 0%, #5687e7 100%);
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 20px;
@@ -512,7 +621,6 @@
     
     <div class="container">
         <div class="sidebar" id="sidebar">
-            <h2>📚 Study Guide</h2>
             
             <div class="chapter-nav" id="chapterNav">
                 <div class="loading">Loading chapters...</div>
@@ -540,10 +648,6 @@
         </div>
         
         <div class="main-content">
-            <div class="header">
-                <h1>🏥 Health Determinants Study Guide</h1>
-                <p>Comprehensive questions organized by chapter with detailed explanations. Click on options to see immediate feedback and learn as you go!</p>
-            </div>
             
             <div id="chaptersContainer">
                 <div class="loading">Loading study content...</div>
@@ -866,6 +970,7 @@
             chaptersData.forEach((chapter, index) => {
                 const chapterItem = document.createElement('div');
                 chapterItem.className = 'chapter-item';
+                chapterItem.setAttribute('data-chapter-id', chapter.id);
                 chapterItem.onclick = () => scrollToChapter(chapter.id);
                 
                 const answered = getChapterAnsweredCount(chapter.id);
@@ -1080,18 +1185,19 @@
         }
 
         function updateChapterNavigation() {
-            const chapterItems = document.querySelectorAll('.chapter-item');
-            chapterItems.forEach((item, index) => {
-                const chapter = chaptersData[index];
-                const answered = getChapterAnsweredCount(chapter.id);
-                const total = chapter.questions.length;
-                const progress = total > 0 ? (answered / total) * 100 : 0;
-                
-                const progressBar = item.querySelector('.progress-fill');
-                const progressText = item.querySelector('.chapter-progress');
-                
-                progressBar.style.width = `${progress}%`;
-                progressText.textContent = `${answered}/${total} completed`;
+            chaptersData.forEach((chapter) => {
+                const chapterItem = document.querySelector(`[data-chapter-id="${chapter.id}"]`);
+                if (chapterItem) {
+                    const answered = getChapterAnsweredCount(chapter.id);
+                    const total = chapter.questions.length;
+                    const progress = total > 0 ? (answered / total) * 100 : 0;
+                    
+                    const progressBar = chapterItem.querySelector('.progress-fill');
+                    const progressText = chapterItem.querySelector('.chapter-progress');
+                    
+                    if (progressBar) progressBar.style.width = `${progress}%`;
+                    if (progressText) progressText.textContent = `${answered}/${total} completed`;
+                }
             });
         }
 
@@ -1118,7 +1224,7 @@
                         
                         // Update active chapter in navigation
                         chapterItems.forEach(item => item.classList.remove('active'));
-                        const activeItem = document.querySelector(`.chapter-item:nth-child(${chapterId})`);
+                        const activeItem = document.querySelector(`[data-chapter-id="${chapterId}"]`);
                         if (activeItem) {
                             activeItem.classList.add('active');
                         }
